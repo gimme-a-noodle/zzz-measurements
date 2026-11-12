@@ -1,6 +1,6 @@
 {
  "$schema": "https://json-schema.org/draft/2020-12/schema",
- "$id": "https://nullhollow.github.io/zzz-measurements/data/schema.json",
+ "$id": "https://gimme-a-noodle.github.io/zzz-measurements/data/schema.json",
  "title": "ZZZ Female Measurements dataset",
  "description": "Measurements, proportions and classification for the female Zenless Zone Zero roster.",
  "type": "object",

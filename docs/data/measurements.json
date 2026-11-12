@@ -41,10 +41,10 @@
    "sheet_available": "Whether a source sheet crop is available"
   },
   "urls": {
-   "site": "https://nullhollow.github.io/zzz-measurements/",
-   "json": "https://nullhollow.github.io/zzz-measurements/data/measurements.json",
-   "csv": "https://nullhollow.github.io/zzz-measurements/data/measurements.csv",
-   "schema": "https://nullhollow.github.io/zzz-measurements/data/schema.json"
+   "site": "https://gimme-a-noodle.github.io/zzz-measurements/",
+   "json": "https://gimme-a-noodle.github.io/zzz-measurements/data/measurements.json",
+   "csv": "https://gimme-a-noodle.github.io/zzz-measurements/data/measurements.csv",
+   "schema": "https://gimme-a-noodle.github.io/zzz-measurements/data/schema.json"
   }
  },
  "characters": [
@@ -107,10 +107,10 @@
    "display_ja": "照",
    "display_zh": "照",
    "display_ko": "자오",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/zhao.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/zhao.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/zhao.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/zhao.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/zhao.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/zhao.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/zhao.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/zhao.html",
    "profile_text": {
     "en": {
      "cm": "Zhao measures just 118 cm (3'10.4\"), one of the most compact frames on the chart. Her 40.5 cm bust (UK 15A) is among the smallest bust measurements here. The waist comes in at 36.7 cm (waist-to-height 0.31), one of the trimmer midsections in the set. Below that, compact hips (63.5 cm) pair with slim 42.5 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.10, hip/waist 1.73, bust–hip balance 64%): bust and hip percentile ranks are close. Chart note: Torso measurements approximated due to clothing and a lack of data on rabbit thiren physiology.",
@@ -195,10 +195,10 @@
    "display_ja": "橘福福",
    "display_zh": "橘福福",
    "display_ko": "귤복복",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/ju_fufu.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/ju_fufu.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/ju_fufu.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/ju_fufu.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/ju_fufu.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/ju_fufu.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/ju_fufu.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/ju_fufu.html",
    "profile_text": {
     "en": {
      "cm": "Ju Fufu measures just 142 cm (4'8\"), one of the most compact frames on the chart. Her 47.1 cm bust (UK 17B) is among the smallest bust measurements here. The waist comes in at 41.1 cm (waist-to-height 0.29), one of the trimmer midsections in the set. Below that, compact hips (70.2 cm) pair with slim 42.4 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.15, hip/waist 1.71, bust–hip balance 67%): bust and hip percentile ranks are close. Chart note: Chest approximated due to clothing.",
@@ -283,10 +283,10 @@
    "display_ja": "蒼角",
    "display_zh": "苍角",
    "display_ko": "소우카쿠",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/soukaku.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/soukaku.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/soukaku.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/soukaku.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/soukaku.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/soukaku.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/soukaku.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/soukaku.html",
    "profile_text": {
     "en": {
      "cm": "Soukaku measures just 145 cm (4'9.2\"), one of the most compact frames on the chart. Her 47.3 cm bust (UK 18B) is among the smallest bust measurements here. The waist comes in at 40 cm (waist-to-height 0.28), one of the trimmer midsections in the set. Below that, compact hips (68.5 cm) pair with slim 37.7 cm thighs (bottom 1% of the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.18, hip/waist 1.71, bust–hip balance 69%): bust and hip percentile ranks are close.",
@@ -374,10 +374,10 @@
    "display_ja": "千夏",
    "display_zh": "千夏",
    "display_ko": "수나",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/sunna.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/sunna.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/sunna.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/sunna.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/sunna.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/sunna.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/sunna.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/sunna.html",
    "profile_text": {
     "en": {
      "cm": "Sunna measures 154 cm (5'0.8\"), right around the roster average. Her 48.1 cm bust (UK 18B) is among the smallest bust measurements here. The waist comes in at 40.6 cm (waist-to-height 0.26), one of the trimmer midsections in the set. Below that, compact hips (69.1 cm) pair with slim 41.6 cm thighs (bottom 14% of the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.18, hip/waist 1.70, bust–hip balance 70%): bust and hip percentile ranks are close.",
@@ -473,10 +473,10 @@
    "display_ja": "ロクシー・イフリータ・プライス",
    "display_zh": "洛克茜·伊芙莉塔·普莱斯",
    "display_ko": "록시·이프리타·프라이스",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/roxy.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/roxy.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/roxy.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/roxy.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/roxy.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/roxy.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/roxy.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/roxy.html",
    "profile_text": {
     "en": {
      "cm": "Roxy measures just 144 cm (4'8.8\"), one of the most compact frames on the chart. Her 48.3 cm bust (UK 17C) is among the smallest bust measurements here. The waist comes in at 38.1 cm (waist-to-height 0.27), one of the trimmer midsections in the set. Below that, compact hips (70.6 cm) pair with slim 42 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.27, hip/waist 1.85, bust–hip balance 68%): bust and hip percentile ranks are close.",
@@ -565,10 +565,10 @@
    "display_ja": "アリア",
    "display_zh": "爱芮",
    "display_ko": "아리아",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/aria.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/aria.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/aria.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/aria.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/aria.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/aria.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/aria.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/aria.html",
    "profile_text": {
     "en": {
      "cm": "Aria measures 150 cm (4'11.2\"), right around the roster average. Her 49.8 cm bust (UK 18C) is among the smallest bust measurements here. The waist comes in at 37.1 cm (waist-to-height 0.25), one of the trimmer midsections in the set. Below that, compact hips (72.6 cm) pair with slim 41.4 cm thighs (bottom 11% of the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.34, hip/waist 1.96, bust–hip balance 69%): bust and hip percentile ranks are close.",
@@ -666,10 +666,10 @@
    "display_ja": "アリア",
    "display_zh": "爱芮",
    "display_ko": "아리아",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/aria_construct.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/aria_construct.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/aria_construct.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/aria_construct.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/aria_construct.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/aria_construct.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/aria_construct.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/aria_construct.html",
    "profile_text": {
     "en": {
      "cm": "Aria (Construct) measures just 140 cm (4'7.2\"), one of the most compact frames on the chart. Her 51.6 cm bust (UK 19C) is on the modest side for the chart. The waist comes in at 41.3 cm (waist-to-height 0.29), a middling midsection by this set's standards. Below that, average-width hips (80.4 cm) pair with thick 53.2 cm thighs (top 11% of the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.25, hip/waist 1.95, bust–hip balance 64%): the hips rank higher in the roster than the bust.",
@@ -756,10 +756,10 @@
    "display_ja": "クレタ・ベロボーグ",
    "display_zh": "珂蕾妲·贝洛伯格",
    "display_ko": "콜레다 벨로보그",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/koleda.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/koleda.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/koleda.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/koleda.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/koleda.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/koleda.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/koleda.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/koleda.html",
    "profile_text": {
     "en": {
      "cm": "Koleda measures 150 cm (4'11.2\"), right around the roster average. Her 50 cm bust (UK 19B) is among the smallest bust measurements here. The waist comes in at 39.7 cm (waist-to-height 0.27), one of the trimmer midsections in the set. Below that, hips read compact at 66.1 cm; no reliable thigh measurement exists for her. Put together, she reads as a straight silhouette (bust/waist 1.26, hip/waist 1.66, bust–hip balance 76%): bust and hip percentile ranks are close. Chart note: Hip approximated, thigh impossible to measure.",
@@ -846,10 +846,10 @@
    "display_ja": "ノルムー・ホローウェル",
    "display_zh": "诺姆·霍洛维尔",
    "display_ko": "노르마·할로웰",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/norma.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/norma.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/norma.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/norma.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/norma.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/norma.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/norma.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/norma.html",
    "profile_text": {
     "en": {
      "cm": "Norma measures 150 cm (4'11.2\"), right around the roster average. Her 50.3 cm bust (UK 18C) is among the smallest bust measurements here. The waist comes in at 38.4 cm (waist-to-height 0.26), one of the trimmer midsections in the set. Below that, compact hips (69.3 cm) pair with slim 41.6 cm thighs (bottom 14% of the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.31, hip/waist 1.80, bust–hip balance 73%): bust and hip percentile ranks are close.",
@@ -937,10 +937,10 @@
    "display_ja": "ルーシー",
    "display_zh": "露西",
    "display_ko": "루시",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/lucy.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/lucy.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/lucy.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/lucy.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/lucy.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/lucy.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/lucy.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/lucy.html",
    "profile_text": {
     "en": {
      "cm": "Lucy measures 152 cm (5'0\"), right around the roster average. Her 52.7 cm bust (UK 19C) is on the modest side for the chart. The waist comes in at 39.6 cm (waist-to-height 0.26), one of the trimmer midsections in the set. Below that, compact hips (69 cm) pair with slim 41.2 cm thighs (bottom 9% of the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.33, hip/waist 1.74, bust–hip balance 76%): the bust ranks higher in the roster than the hips.",
@@ -1043,10 +1043,10 @@
    "display_ja": "南宮羽",
    "display_zh": "南宫羽",
    "display_ko": "남궁우",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/nangong_yu.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/nangong_yu.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/nangong_yu.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/nangong_yu.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/nangong_yu.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/nangong_yu.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/nangong_yu.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/nangong_yu.html",
    "profile_text": {
     "en": {
      "cm": "Nangong Yu measures 156 cm (5'1.6\"), right around the roster average. Her 51.3 cm bust (UK 19C) is on the modest side for the chart. The waist comes in at 39.5 cm (waist-to-height 0.25), one of the trimmer midsections in the set. Below that, compact hips (70.9 cm) pair with slim 42.4 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.30, hip/waist 1.79, bust–hip balance 72%): bust and hip percentile ranks are close.",
@@ -1140,10 +1140,10 @@
    "display_ja": "ダイアリン",
    "display_zh": "琉音",
    "display_ko": "다이아린",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/dialyn.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/dialyn.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/dialyn.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/dialyn.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/dialyn.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/dialyn.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/dialyn.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/dialyn.html",
    "profile_text": {
     "en": {
      "cm": "Dialyn measures just 145 cm (4'9.2\"), one of the most compact frames on the chart. Her 51.4 cm bust (UK 18C) is on the modest side for the chart. The waist comes in at 38 cm (waist-to-height 0.26), one of the trimmer midsections in the set. Below that, compact hips (71.6 cm) pair with slim 43.4 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.35, hip/waist 1.88, bust–hip balance 72%): bust and hip percentile ranks are close.",
@@ -1230,10 +1230,10 @@
    "display_ja": "パイパー・ウィール",
    "display_zh": "派派·韦尔",
    "display_ko": "파이퍼 휠",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/piper.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/piper.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/piper.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/piper.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/piper.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/piper.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/piper.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/piper.html",
    "profile_text": {
     "en": {
      "cm": "Piper measures 151 cm (4'11.6\"), right around the roster average. Her 52.4 cm bust (UK 19C) is on the modest side for the chart. The waist comes in at 42.1 cm (waist-to-height 0.28), a middling midsection by this set's standards. Below that, compact hips (75.3 cm) pair with average 44.7 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.24, hip/waist 1.79, bust–hip balance 70%): bust and hip percentile ranks are close.",
@@ -1320,10 +1320,10 @@
    "display_ja": "カリン・ウィクス",
    "display_zh": "可琳·威克斯",
    "display_ko": "코린 위크스",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/corin.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/corin.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/corin.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/corin.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/corin.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/corin.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/corin.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/corin.html",
    "profile_text": {
     "en": {
      "cm": "Corin measures just 141 cm (4'7.6\"), one of the most compact frames on the chart. Her 52.6 cm bust (UK 19C) is on the modest side for the chart. The waist comes in at 41.2 cm (waist-to-height 0.29), one of the trimmer midsections in the set. Below that, compact hips (69.4 cm) pair with slim 39.8 cm thighs (bottom 4% of the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.28, hip/waist 1.68, bust–hip balance 76%): bust and hip percentile ranks are close. Chart note: Waist and hip approximated.",
@@ -1410,10 +1410,10 @@
    "display_ja": "猫宮又奈",
    "display_zh": "猫宫又奈",
    "display_ko": "네코미야 마나",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/nekomata.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/nekomata.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/nekomata.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/nekomata.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/nekomata.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/nekomata.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/nekomata.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/nekomata.html",
    "profile_text": {
     "en": {
      "cm": "Nekomata measures just 148 cm (4'10.4\"), one of the most compact frames on the chart. Her 51.9 cm bust (UK 19C) is on the modest side for the chart. The waist comes in at 39.8 cm (waist-to-height 0.27), one of the trimmer midsections in the set. Below that, compact hips (67.4 cm) pair with slim 39.8 cm thighs (bottom 4% of the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.30, hip/waist 1.69, bust–hip balance 77%): bust and hip percentile ranks are close. Chart note: Hip approximated, clothing too baggy for accurate reading.",
@@ -1498,10 +1498,10 @@
    "display_ja": "青衣",
    "display_zh": "青衣",
    "display_ko": "청의",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/qingyi.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/qingyi.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/qingyi.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/qingyi.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/qingyi.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/qingyi.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/qingyi.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/qingyi.html",
    "profile_text": {
     "en": {
      "cm": "Qingyi measures just 142 cm (4'8\"), one of the most compact frames on the chart. Her 52.1 cm bust (UK 19C) is on the modest side for the chart. The waist comes in at 39.4 cm (waist-to-height 0.28), one of the trimmer midsections in the set. Below that, compact hips (73 cm) pair with slim 42.8 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.32, hip/waist 1.85, bust–hip balance 71%): bust and hip percentile ranks are close.",
@@ -1590,10 +1590,10 @@
    "display_ja": "フィオニー・レファエラ",
    "display_zh": "菲欧妮·蕾法爱菈",
    "display_ko": "피닉스 레파엘라",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/phoenix.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/phoenix.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/phoenix.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/phoenix.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/phoenix.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/phoenix.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/phoenix.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/phoenix.html",
    "profile_text": {
     "en": {
      "cm": "Phoenix measures 156 cm (5'1.6\"), right around the roster average. Her 59.4 cm bust (UK 21C) is close to the roster average. The waist comes in at 40.6 cm (waist-to-height 0.26), one of the trimmer midsections in the set. Below that, average-width hips (78.8 cm) pair with average 44.9 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.46, hip/waist 1.94, bust–hip balance 75%): bust and hip percentile ranks are close.",
@@ -1687,10 +1687,10 @@
    "display_ja": "「シード」",
    "display_zh": "「席德」",
    "display_ko": "「시드」",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/seed.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/seed.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/seed.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/seed.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/seed.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/seed.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/seed.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/seed.html",
    "profile_text": {
     "en": {
      "cm": "Seed measures 153 cm (5'0.4\"), right around the roster average. Her 60.1 cm bust (UK 20D) is close to the roster average. The waist comes in at 42.8 cm (waist-to-height 0.28), a middling midsection by this set's standards. Below that, average-width hips (77 cm) pair with average 45.1 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.40, hip/waist 1.80, bust–hip balance 78%): bust and hip percentile ranks are close.",
@@ -1778,10 +1778,10 @@
    "display_ja": "浮波柚葉",
    "display_zh": "浮波柚叶",
    "display_ko": "우키나미 유즈하",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/yuzuha.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/yuzuha.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/yuzuha.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/yuzuha.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/yuzuha.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/yuzuha.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/yuzuha.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/yuzuha.html",
    "profile_text": {
     "en": {
      "cm": "Yuzuha measures 162 cm (5'3.6\"), right around the roster average. Her 60.8 cm bust (UK 20D) is close to the roster average. The waist comes in at 40.8 cm (waist-to-height 0.25), one of the trimmer midsections in the set. Below that, average-width hips (79.9 cm) pair with average 46.8 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.49, hip/waist 1.96, bust–hip balance 76%): bust and hip percentile ranks are close.",
@@ -1874,10 +1874,10 @@
    "display_ja": "星見雅",
    "display_zh": "星见雅",
    "display_ko": "호시미 미야비",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/miyabi.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/miyabi.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/miyabi.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/miyabi.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/miyabi.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/miyabi.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/miyabi.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/miyabi.html",
    "profile_text": {
     "en": {
      "cm": "Miyabi is charted at 170 cm (5'6.8\"), but that figure counts her ears: at head height she stands about 152.1 cm (5'0\"), just under the roster average. Her 60.8 cm bust (UK 19E) is close to the roster average. The waist comes in at 46.4 cm (waist-to-height 0.30), a fuller midsection than most of the roster. Below that, compact hips (66.3 cm) pair with slim 40.2 cm thighs (bottom 7% of the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.31, hip/waist 1.43, bust–hip balance 92%): the bust ranks higher in the roster than the hips.",
@@ -1970,10 +1970,10 @@
    "display_ja": "ビビアン",
    "display_zh": "薇薇安",
    "display_ko": "비비안",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/vivian.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/vivian.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/vivian.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/vivian.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/vivian.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/vivian.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/vivian.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/vivian.html",
    "profile_text": {
     "en": {
      "cm": "Vivian measures 162 cm (5'3.6\"), right around the roster average. Her 58.2 cm bust (UK 18E) is on the modest side for the chart. The waist comes in at 43.2 cm (waist-to-height 0.27), a middling midsection by this set's standards. Below that, average-width hips (77.7 cm) pair with average 44.9 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.35, hip/waist 1.80, bust–hip balance 75%): bust and hip percentile ranks are close.",
@@ -2077,10 +2077,10 @@
    "display_ja": "リン",
    "display_zh": "铃",
    "display_ko": "벨",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/belle.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/belle.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/belle.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/belle.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/belle.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/belle.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/belle.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/belle.html",
    "profile_text": {
     "en": {
      "cm": "Belle measures 158 cm (5'2.4\"), right around the roster average. Her 61.9 cm bust (UK 21D) is close to the roster average. The waist comes in at 41.2 cm (waist-to-height 0.26), one of the trimmer midsections in the set. Below that, compact hips (75.5 cm) pair with slim 44.3 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.50, hip/waist 1.83, bust–hip balance 82%): bust and hip percentile ranks are close.",
@@ -2191,10 +2191,10 @@
    "display_ja": "アンビー・デマラ",
    "display_zh": "安比·德玛拉",
    "display_ko": "엔비 데마라",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/anby.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/anby.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/anby.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/anby.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/anby.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/anby.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/anby.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/anby.html",
    "profile_text": {
     "en": {
      "cm": "Anby measures 156 cm (5'1.6\"), right around the roster average. Her 63.5 cm bust (UK 21DD) is close to the roster average. The waist comes in at 43.3 cm (waist-to-height 0.28), a middling midsection by this set's standards. Below that, average-width hips (78.5 cm) pair with average 45.4 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.47, hip/waist 1.81, bust–hip balance 81%): bust and hip percentile ranks are close. Chart note: SAnby used for measurements, more visible geometry available.",
@@ -2282,10 +2282,10 @@
    "display_ja": "「11号」",
    "display_zh": "11号",
    "display_ko": "11호",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/soldier_11.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/soldier_11.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/soldier_11.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/soldier_11.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/soldier_11.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/soldier_11.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/soldier_11.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/soldier_11.html",
    "profile_text": {
     "en": {
      "cm": "Soldier 11 measures 160 cm (5'2.8\"), right around the roster average. Her 62.9 cm bust (UK 20E) is close to the roster average. The waist comes in at 47.1 cm (waist-to-height 0.29), a fuller midsection than most of the roster. Below that, average-width hips (81.5 cm) pair with average 46.1 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.34, hip/waist 1.73, bust–hip balance 77%): bust and hip percentile ranks are close.",
@@ -2372,10 +2372,10 @@
    "display_ja": "リュシア",
    "display_zh": "卢西娅",
    "display_ko": "루시아",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/lucia.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/lucia.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/lucia.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/lucia.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/lucia.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/lucia.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/lucia.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/lucia.html",
    "profile_text": {
     "en": {
      "cm": "Lucia measures 160 cm (5'2.8\"), right around the roster average. Her 64.6 cm bust (UK 21E) is close to the roster average. The waist comes in at 44.9 cm (waist-to-height 0.28), a middling midsection by this set's standards. Below that, average-width hips (81.9 cm) pair with average 49 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.44, hip/waist 1.82, bust–hip balance 79%): bust and hip percentile ranks are close.",
@@ -2460,10 +2460,10 @@
    "display_ja": "プロメイア",
    "display_zh": "普罗米娅",
    "display_ko": "프로미아",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/promeia.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/promeia.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/promeia.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/promeia.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/promeia.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/promeia.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/promeia.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/promeia.html",
    "profile_text": {
     "en": {
      "cm": "Promeia is one of the taller figures here, 7th tallest of 51, at 174 cm (5'8.4\"). Her 66.8 cm bust (UK 22E) is close to the roster average. The waist comes in at 46.8 cm (waist-to-height 0.27), a fuller midsection than most of the roster. Below that, wide hips (89.3 cm) pair with average 48.1 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a straight silhouette (bust/waist 1.43, hip/waist 1.91, bust–hip balance 75%): the hips rank higher in the roster than the bust.",
@@ -2550,10 +2550,10 @@
    "display_ja": "クラレッタ・フリンツ",
    "display_zh": "克拉蕾·弗林特",
    "display_ko": "클라렛·플린트",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/claret.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/claret.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/claret.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/claret.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/claret.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/claret.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/claret.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/claret.html",
    "profile_text": {
     "en": {
      "cm": "Claret measures 166 cm (5'5.2\"), above the roster average at 19th tallest of 51. Her 67.4 cm bust (UK 21E) is close to the roster average. The waist comes in at 43.8 cm (waist-to-height 0.26), a middling midsection by this set's standards. Below that, average-width hips (77.1 cm) pair with average 45.8 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.54, hip/waist 1.76, bust–hip balance 87%): the bust ranks higher in the roster than the hips.",
@@ -2640,10 +2640,10 @@
    "display_ja": "エレン・ジョー",
    "display_zh": "艾莲·乔",
    "display_ko": "엘렌 조",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/ellen_joe.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/ellen_joe.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/ellen_joe.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/ellen_joe.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/ellen_joe.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/ellen_joe.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/ellen_joe.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/ellen_joe.html",
    "profile_text": {
     "en": {
      "cm": "Ellen Joe measures 161 cm (5'3.2\"), right around the roster average. Her 63.5 cm bust (UK 19F) is close to the roster average. The waist comes in at 44.1 cm (waist-to-height 0.27), a middling midsection by this set's standards. Below that, average-width hips (80.6 cm) pair with average 46 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.44, hip/waist 1.83, bust–hip balance 79%): bust and hip percentile ranks are close.",
@@ -2736,10 +2736,10 @@
    "display_ja": "アリス・タイムフィールド",
    "display_zh": "爱丽丝·泰姆菲尔德",
    "display_ko": "앨리스 타임필드",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/alice.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/alice.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/alice.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/alice.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/alice.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/alice.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/alice.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/alice.html",
    "profile_text": {
     "en": {
      "cm": "Alice measures 163 cm (5'4\"), right around the roster average. Her 65.2 cm bust (UK 20F) is close to the roster average. The waist comes in at 42.2 cm (waist-to-height 0.26), a middling midsection by this set's standards. Below that, average-width hips (78.1 cm) pair with average 45.7 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.55, hip/waist 1.85, bust–hip balance 83%): bust and hip percentile ranks are close.",
@@ -2831,10 +2831,10 @@
    "display_ja": "葉瞬光",
    "display_zh": "叶瞬光",
    "display_ko": "엽빛나",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/ye_shunguang.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/ye_shunguang.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/ye_shunguang.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/ye_shunguang.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/ye_shunguang.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/ye_shunguang.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/ye_shunguang.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/ye_shunguang.html",
    "profile_text": {
     "en": {
      "cm": "Ye Shunguang measures 162 cm (5'3.6\"), right around the roster average. Her 65.5 cm bust (UK 20F) is close to the roster average. The waist comes in at 42.6 cm (waist-to-height 0.26), a middling midsection by this set's standards. Below that, average-width hips (76.9 cm) pair with slim 44.3 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.54, hip/waist 1.81, bust–hip balance 85%): the bust ranks higher in the roster than the hips.",
@@ -2926,10 +2926,10 @@
    "display_ja": "オルペウス＆「鬼火」",
    "display_zh": "奥菲丝&「鬼火」",
    "display_ko": "오피 & 「도깨비불」",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/orphie.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/orphie.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/orphie.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/orphie.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/orphie.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/orphie.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/orphie.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/orphie.html",
    "profile_text": {
     "en": {
      "cm": "Orphie measures 158 cm (5'2.4\"), right around the roster average. Her 66.9 cm bust (UK 20F) is close to the roster average. The waist comes in at 44.4 cm (waist-to-height 0.28), a middling midsection by this set's standards. Below that, average-width hips (77.6 cm) pair with thick 46.9 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.51, hip/waist 1.75, bust–hip balance 86%): bust and hip percentile ranks are close.",
@@ -3016,10 +3016,10 @@
    "display_ja": "バーニス",
    "display_zh": "柏妮思",
    "display_ko": "버니스",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/burnice.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/burnice.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/burnice.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/burnice.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/burnice.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/burnice.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/burnice.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/burnice.html",
    "profile_text": {
     "en": {
      "cm": "Burnice measures 160 cm (5'2.8\"), right around the roster average. Her 67.4 cm bust (UK 21F) is close to the roster average. The waist comes in at 43.8 cm (waist-to-height 0.27), a middling midsection by this set's standards. Below that, average-width hips (79.6 cm) pair with thick 46.1 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.54, hip/waist 1.82, bust–hip balance 85%): bust and hip percentile ranks are close.",
@@ -3104,10 +3104,10 @@
    "display_ja": "シーシィア",
    "display_zh": "希希芙",
    "display_ko": "시시아",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/cissia.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/cissia.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/cissia.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/cissia.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/cissia.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/cissia.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/cissia.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/cissia.html",
    "profile_text": {
     "en": {
      "cm": "Cissia measures 156 cm (5'1.6\"), right around the roster average. Her 67.2 cm bust (UK 21F) is close to the roster average. The waist comes in at 42.5 cm (waist-to-height 0.27), a middling midsection by this set's standards. Below that, average-width hips (77.1 cm) pair with thick 44.9 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.58, hip/waist 1.81, bust–hip balance 87%): the bust ranks higher in the roster than the hips.",
@@ -3195,10 +3195,10 @@
    "display_ja": "ニコ・デマラ",
    "display_zh": "妮可·德玛拉",
    "display_ko": "니콜 데마라",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/nicole.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/nicole.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/nicole.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/nicole.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/nicole.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/nicole.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/nicole.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/nicole.html",
    "profile_text": {
     "en": {
      "cm": "Nicole measures 165 cm (5'4.8\"), right around the roster average. Her 68.1 cm bust (UK 20F) is close to the roster average. The waist comes in at 44.9 cm (waist-to-height 0.27), a middling midsection by this set's standards. Below that, average-width hips (81.4 cm) pair with average 46.2 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.52, hip/waist 1.81, bust–hip balance 84%): bust and hip percentile ranks are close.",
@@ -3288,10 +3288,10 @@
    "display_ja": "「トリガー」",
    "display_zh": "「扳机」",
    "display_ko": "「트리거」",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/trigger.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/trigger.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/trigger.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/trigger.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/trigger.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/trigger.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/trigger.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/trigger.html",
    "profile_text": {
     "en": {
      "cm": "Trigger is one of the taller figures here, 8th tallest of 51, at 173 cm (5'8\"). Her 69.6 cm bust (UK 23E) is clearly above the roster average. The waist comes in at 49.3 cm (waist-to-height 0.28), a fuller midsection than most of the roster. Below that, wide hips (89 cm) pair with thick 52.4 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.41, hip/waist 1.81, bust–hip balance 78%): bust and hip percentile ranks are close. Chart note: Chest approximated due to armor.",
@@ -3380,10 +3380,10 @@
    "display_ja": "ジェーン・ドゥ",
    "display_zh": "简·杜",
    "display_ko": "제인 도",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/jane_doe.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/jane_doe.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/jane_doe.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/jane_doe.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/jane_doe.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/jane_doe.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/jane_doe.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/jane_doe.html",
    "profile_text": {
     "en": {
      "cm": "Jane Doe measures 170 cm (5'6.8\"), above the roster average at 15th tallest of 51. Her 71.3 cm bust (UK 23E) is clearly above the roster average. The waist comes in at 49.1 cm (waist-to-height 0.29), a fuller midsection than most of the roster. Below that, wide hips (89.6 cm) pair with thick 52.9 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.45, hip/waist 1.82, bust–hip balance 80%): bust and hip percentile ranks are close. Chart note: Measurements use the Nocturne of Light outfit; standard-model values are not used.",
@@ -3473,10 +3473,10 @@
    "display_ja": "朱鳶",
    "display_zh": "朱鸢",
    "display_ko": "주연",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/zhu_yuan.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/zhu_yuan.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/zhu_yuan.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/zhu_yuan.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/zhu_yuan.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/zhu_yuan.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/zhu_yuan.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/zhu_yuan.html",
    "profile_text": {
     "en": {
      "cm": "Zhu Yuan is one of the taller figures here, 4th tallest of 51, at 175 cm (5'8.8\"). Her 71.1 cm bust (UK 23E) is clearly above the roster average. The waist comes in at 51.2 cm (waist-to-height 0.29), a fuller midsection than most of the roster. Below that, wide hips (94.1 cm) pair with thick 55.3 cm thighs (top 3% of the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.39, hip/waist 1.84, bust–hip balance 76%): the hips rank higher in the roster than the bust.",
@@ -3564,10 +3564,10 @@
    "display_ja": "シグリッド・ドゥ・ラズール",
    "display_zh": "希格莉德·德拉叙尔",
    "display_ko": "시그리드·드라주르",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/sigrid.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/sigrid.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/sigrid.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/sigrid.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/sigrid.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/sigrid.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/sigrid.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/sigrid.html",
    "profile_text": {
     "en": {
      "cm": "Sigrid is one of the taller figures here, 4th tallest of 51, at 175 cm (5'8.8\"). Her 72.3 cm bust (UK 23E) is clearly above the roster average. The waist comes in at 48 cm (waist-to-height 0.27), a fuller midsection than most of the roster. Below that, wide hips (89.6 cm) pair with thick 53.1 cm thighs (top 14% of the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.51, hip/waist 1.87, bust–hip balance 81%): bust and hip percentile ranks are close.",
@@ -3659,10 +3659,10 @@
    "display_ja": "アストラ・ヤオ",
    "display_zh": "耀嘉音",
    "display_ko": "아스트라",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/astra_yao.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/astra_yao.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/astra_yao.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/astra_yao.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/astra_yao.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/astra_yao.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/astra_yao.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/astra_yao.html",
    "profile_text": {
     "en": {
      "cm": "Astra Yao is among the tallest figures on the chart at 176 cm (5'9.2\"). Her 71.4 cm bust (UK 22F) is clearly above the roster average. The waist comes in at 45.9 cm (waist-to-height 0.26), a middling midsection by this set's standards. Below that, wide hips (87.9 cm) pair with thick 51.3 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.56, hip/waist 1.92, bust–hip balance 81%): bust and hip percentile ranks are close.",
@@ -3754,10 +3754,10 @@
    "display_ja": "イヴリン・シェヴァリエ",
    "display_zh": "伊芙琳·舒瓦利耶",
    "display_ko": "이블린 슈발리에",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/evelyn.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/evelyn.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/evelyn.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/evelyn.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/evelyn.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/evelyn.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/evelyn.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/evelyn.html",
    "profile_text": {
     "en": {
      "cm": "Evelyn is one of the taller figures here, 8th tallest of 51, at 173 cm (5'8\"). Her 74.6 cm bust (UK 23F) is clearly above the roster average. The waist comes in at 49.9 cm (waist-to-height 0.29), a fuller midsection than most of the roster. Below that, wide hips (86.3 cm) pair with thick 52.8 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.49, hip/waist 1.73, bust–hip balance 86%): bust and hip percentile ranks are close.",
@@ -3846,10 +3846,10 @@
    "display_ja": "レミエール・ダン",
    "display_zh": "蕾米埃尔·丹",
    "display_ko": "레미엘 댄",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/remielle.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/remielle.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/remielle.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/remielle.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/remielle.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/remielle.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/remielle.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/remielle.html",
    "profile_text": {
     "en": {
      "cm": "Remielle measures 167 cm (5'5.6\"), above the roster average at 18th tallest of 51. Her 72.1 cm bust (UK 21G) is clearly above the roster average. The waist comes in at 42 cm (waist-to-height 0.25), a middling midsection by this set's standards. Below that, average-width hips (83.8 cm) pair with thick 51.9 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.72, hip/waist 2.00, bust–hip balance 86%): bust and hip percentile ranks are close. Chart note: TBC.",
@@ -3945,10 +3945,10 @@
    "display_ja": "プルクラ・フェリーニ",
    "display_zh": "波可娜·费雷尼",
    "display_ko": "펄크라 페리니",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/pulchra.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/pulchra.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/pulchra.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/pulchra.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/pulchra.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/pulchra.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/pulchra.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/pulchra.html",
    "profile_text": {
     "en": {
      "cm": "Pulchra is one of the taller figures here, 8th tallest of 51, at 173 cm (5'8\"). Her 73.8 cm bust (UK 22FF) is clearly above the roster average. The waist comes in at 47.4 cm (waist-to-height 0.27), a fuller midsection than most of the roster. Below that, wide hips (93.8 cm) pair with thick 53.1 cm thighs (top 14% of the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.56, hip/waist 1.98, bust–hip balance 79%): bust and hip percentile ranks are close.",
@@ -4036,10 +4036,10 @@
    "display_ja": "儀玄",
    "display_zh": "仪玄",
    "display_ko": "의현",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/yi_xuan.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/yi_xuan.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/yi_xuan.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/yi_xuan.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/yi_xuan.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/yi_xuan.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/yi_xuan.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/yi_xuan.html",
    "profile_text": {
     "en": {
      "cm": "Yi Xuan measures 172 cm (5'7.6\"), above the roster average at 12th tallest of 51. Her 75.1 cm bust (UK 22G) is clearly above the roster average. The waist comes in at 49.5 cm (waist-to-height 0.29), a fuller midsection than most of the roster. Below that, wide hips (87.9 cm) pair with thick 52.9 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.52, hip/waist 1.78, bust–hip balance 85%): bust and hip percentile ranks are close.",
@@ -4131,10 +4131,10 @@
    "display_ja": "月城柳",
    "display_zh": "月城柳",
    "display_ko": "츠키시로 야나기",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/yanagi.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/yanagi.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/yanagi.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/yanagi.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/yanagi.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/yanagi.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/yanagi.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/yanagi.html",
    "profile_text": {
     "en": {
      "cm": "Yanagi measures 169 cm (5'6.4\"), above the roster average at 17th tallest of 51. Her 79 cm bust (UK 23G) is among the largest bust measurements on the chart. The waist comes in at 50.5 cm (waist-to-height 0.30), a fuller midsection than most of the roster. Below that, wide hips (91.2 cm) pair with thick 51.2 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.56, hip/waist 1.81, bust–hip balance 87%): bust and hip percentile ranks are close.",
@@ -4221,10 +4221,10 @@
    "display_ja": "グレース・ハワード",
    "display_zh": "格莉丝·霍华德",
    "display_ko": "그레이스 하워드",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/grace.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/grace.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/grace.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/grace.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/grace.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/grace.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/grace.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/grace.html",
    "profile_text": {
     "en": {
      "cm": "Grace measures 170 cm (5'6.8\"), above the roster average at 15th tallest of 51. Her 76.4 cm bust (UK 21GG) is among the largest bust measurements on the chart. The waist comes in at 49.3 cm (waist-to-height 0.29), a fuller midsection than most of the roster. Below that, wide hips (91.4 cm) pair with thick 52.5 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as a balanced silhouette (bust/waist 1.55, hip/waist 1.85, bust–hip balance 84%): bust and hip percentile ranks are close.",
@@ -4312,10 +4312,10 @@
    "display_ja": "ヴェリナ・エガード",
    "display_zh": "维琳娜·艾嘉德",
    "display_ko": "벨리나·에어기드",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/velina.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/velina.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/velina.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/velina.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/velina.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/velina.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/velina.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/velina.html",
    "profile_text": {
     "en": {
      "cm": "Velina measures 172 cm (5'7.6\"), above the roster average at 12th tallest of 51. Her 77.5 cm bust (UK 21H) is among the largest bust measurements on the chart. The waist comes in at 45.7 cm (waist-to-height 0.27), a middling midsection by this set's standards. Below that, wide hips (87.9 cm) pair with thick 52.1 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.70, hip/waist 1.92, bust–hip balance 88%): bust and hip percentile ranks are close.",
@@ -4407,10 +4407,10 @@
    "display_ja": "キング・シーザー",
    "display_zh": "凯撒·金",
    "display_ko": "카이사르 킹",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/caesar.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/caesar.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/caesar.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/caesar.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/caesar.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/caesar.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/caesar.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/caesar.html",
    "profile_text": {
     "en": {
      "cm": "Caesar is among the tallest figures on the chart at 176 cm (5'9.2\"). Her 78.3 cm bust (UK 23G) is among the largest bust measurements on the chart. The waist comes in at 51.9 cm (waist-to-height 0.29), a fuller midsection than most of the roster. Below that, wide hips (91.7 cm) pair with thick 53.8 cm thighs (top 9% of the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.51, hip/waist 1.77, bust–hip balance 85%): bust and hip percentile ranks are close.",
@@ -4497,10 +4497,10 @@
    "display_ja": "イドリー",
    "display_zh": "伊德海莉",
    "display_ko": "이드하리",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/yidhari.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/yidhari.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/yidhari.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/yidhari.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/yidhari.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/yidhari.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/yidhari.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/yidhari.html",
    "profile_text": {
     "en": {
      "cm": "Yidhari measures 171 cm (5'7.2\"), above the roster average at 14th tallest of 51. Her 79.3 cm bust (UK 22H) is among the largest bust measurements on the chart. The waist comes in at 46 cm (waist-to-height 0.27), a fuller midsection than most of the roster. Below that, wide hips (87.3 cm) pair with thick 51.5 cm thighs (mid-pack for the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.72, hip/waist 1.90, bust–hip balance 91%): the bust ranks higher in the roster than the hips.",
@@ -4587,10 +4587,10 @@
    "display_ja": "アレクサンドリナ・セバスチャン",
    "display_zh": "亚历山德丽娜·莎芭丝缇安",
    "display_ko": "알렉산드리나 세바스티안",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/rina.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/rina.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/rina.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/rina.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/rina.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/rina.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/rina.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/rina.html",
    "profile_text": {
     "en": {
      "cm": "Rina is one of the taller figures here, 8th tallest of 51, at 173 cm (5'8\"). Her 80.5 cm bust (UK 23GG) is among the largest bust measurements on the chart. The waist comes in at 51.3 cm (waist-to-height 0.30), a fuller midsection than most of the roster. Below that, wide hips (92.5 cm) pair with thick 54.3 cm thighs (top 5% of the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.57, hip/waist 1.80, bust–hip balance 87%): bust and hip percentile ranks are close.",
@@ -4678,10 +4678,10 @@
    "display_ja": "エルダ・サンブリンガー",
    "display_zh": "艾尔妲·挽昼",
    "display_ko": "엘드레다",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/eldreda_sunbringer.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/eldreda_sunbringer.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/eldreda_sunbringer.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/eldreda_sunbringer.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/eldreda_sunbringer.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/eldreda_sunbringer.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/eldreda_sunbringer.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/eldreda_sunbringer.html",
    "profile_text": {
     "en": {
      "cm": "Eldreda Sunbringer's height estimate is 180.37 cm excluding horns (193.37 cm including horns); comparisons use the horn-excluding height. Her 86.52 cm bust (UK 23HH) is among the largest bust measurements on the chart. The waist comes in at 54.14 cm (waist-to-height 0.30), a fuller midsection than most of the roster. Below that, wide hips (92.5 cm) pair with thick 56.82 cm thighs (top 1% of the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.60, hip/waist 1.71, bust–hip balance 94%): bust and hip percentile ranks are close. Chart note: Project estimate based on the owner's assumptions and other sources; not from modelmetrics.net. Height including horns is 193.37 cm; comparisons use 180.37 cm excluding horns. UK 23HH is the supplied source size. US and EU sizes are estimates only: the nonstandard UK band prevents exact standard conversion, and the EU estimate rounds the theoretical band upward.",
@@ -4770,10 +4770,10 @@
    "display_ja": "カフカ",
    "display_zh": "卡芙卡",
    "display_ko": "카프카",
-   "profile": "https://nullhollow.github.io/zzz-measurements/characters/kafka.html",
-   "profile_ja": "https://nullhollow.github.io/zzz-measurements/ja/characters/kafka.html",
-   "profile_zh": "https://nullhollow.github.io/zzz-measurements/zh/characters/kafka.html",
-   "profile_ko": "https://nullhollow.github.io/zzz-measurements/ko/characters/kafka.html",
+   "profile": "https://gimme-a-noodle.github.io/zzz-measurements/characters/kafka.html",
+   "profile_ja": "https://gimme-a-noodle.github.io/zzz-measurements/ja/characters/kafka.html",
+   "profile_zh": "https://gimme-a-noodle.github.io/zzz-measurements/zh/characters/kafka.html",
+   "profile_ko": "https://gimme-a-noodle.github.io/zzz-measurements/ko/characters/kafka.html",
    "profile_text": {
     "en": {
      "cm": "Kafka is one of the taller figures here, 6th tallest of 51, at 174.1 cm (5'8.5\"). Her 81 cm bust (UK ≈23GG) is among the largest bust measurements on the chart. The waist comes in at 53.5 cm (waist-to-height 0.31), a fuller midsection than most of the roster. Below that, wide hips (92.8 cm) pair with thick 53.9 cm thighs (top 7% of the roster by thigh circumference). Put together, she reads as an hourglass silhouette (bust/waist 1.51, hip/waist 1.73, bust–hip balance 87%): bust and hip percentile ranks are close. Chart note: Owner-calculated measurements with AI assistance using a 3D model provided by hiragara; not from modelmetrics.net. Height is 174.1 cm after subtracting 7.0 cm of footwear from the model's 181.1 cm. Estimated bra sizes: UK ≈23GG / US ≈23J / EU ≈48L; matched to Grace and Rina using this dataset's sizing convention rather than standard retail conversions.",
