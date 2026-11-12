@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZZZ Measurements</title>
+<meta name="description" content="젠레스 존 제로 캐릭터 치수를 어떻게 쟀는지, 귀가 포함된 공식 키를 어떻게 다루는지, 실루엣 분류와 백분위가 무엇을 뜻하는지 정리했습니다.">
+<link rel="canonical" href="https://nullhollow.github.io/zzz-measurements/ko/methodology.html">
+<link rel="alternate" hreflang="en" href="https://nullhollow.github.io/zzz-measurements/methodology.html">
+<link rel="alternate" hreflang="ja" href="https://nullhollow.github.io/zzz-measurements/ja/methodology.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://nullhollow.github.io/zzz-measurements/zh/methodology.html">
+<link rel="alternate" hreflang="ko" href="https://nullhollow.github.io/zzz-measurements/ko/methodology.html">
+<link rel="alternate" hreflang="x-default" href="https://nullhollow.github.io/zzz-measurements/methodology.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ZZZ Female Measurements">
+<meta property="og:title" content="산출 방법, 분류, FAQ — ZZZ 여성 캐릭터 신체 치수">
+<meta property="og:description" content="젠레스 존 제로 캐릭터 치수를 어떻게 쟀는지, 귀가 포함된 공식 키를 어떻게 다루는지, 실루엣 분류와 백분위가 무엇을 뜻하는지 정리했습니다.">
+<meta property="og:url" content="https://nullhollow.github.io/zzz-measurements/ko/methodology.html">
+<meta property="og:image" content="https://nullhollow.github.io/zzz-measurements/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="산출 방법, 분류, FAQ — ZZZ 여성 캐릭터 신체 치수">
+<meta name="twitter:description" content="젠레스 존 제로 캐릭터 치수를 어떻게 쟀는지, 귀가 포함된 공식 키를 어떻게 다루는지, 실루엣 분류와 백분위가 무엇을 뜻하는지 정리했습니다.">
+<meta name="twitter:image" content="https://nullhollow.github.io/zzz-measurements/og.png">
+<meta name="theme-color" content="#0B0B0C">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="stylesheet" href="../fonts/fonts.css">
+<meta name="color-scheme" content="dark light">
+<script>/* Run before styles paint. An explicit URL or saved choice overrides the browser. */
+const siteTheme = (() => {
+  const valid = value => ['system', 'light', 'dark'].includes(value);
+  const media = window.matchMedia('(prefers-color-scheme: light)');
+  let preference = 'system';
+  try {
+    const saved = localStorage.getItem('zzz-theme');
+    if (valid(saved)) preference = saved;
+  } catch (_) {}
+  const shared = new URLSearchParams(location.hash.slice(1)).get('th');
+  if (valid(shared)) preference = shared;
+  function paint() {
+    const resolved = preference === 'system' ? (media.matches ? 'light' : 'dark') : preference;
+    document.documentElement.dataset.theme = resolved;
+    document.documentElement.dataset.themePreference = preference;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = resolved === 'light' ? '#F2F4F6' : '#0B0B0C';
+  }
+  media.addEventListener('change', () => { if (preference === 'system') paint(); });
+  paint();
+  return {
+    get preference() { return preference; },
+    set(value) {
+      preference = valid(value) ? value : 'system';
+      try { localStorage.setItem('zzz-theme', preference); } catch (_) {}
+      paint();
+    }
+  };
+})();
+</script>
+<style>/* Accent text and accent surfaces have separate roles in both palettes. */
+:root{
+  color-scheme:dark;
+  --acid:#D8FA00;--acid-deep:#C6E800;--accent-fill:#D8FA00;--accent-fill-deep:#C6E800;--on-accent:#0B0B0C;
+  --hazard:#FFDE00;--hazard-fill:#FFDE00;--signal:#FF7057;--holo:#29D4FF;--blue:#879BFF;
+  --brass:#DB9A45;--tan:#D3BC8E;--ink:#0B0B0C;--coal:#121214;--panel:#17171C;--panel2:#101014;
+  --concrete:#EFEFEF;--dim:#A6A6B0;--dimmer:#9696A3;--line:#ffffff1f;--line2:#ffffff33;--control-line:#73737F;
+  --bust:#FF7057;--waist:#29D4FF;--hips:#D8FA00;--thighs:#FFDE00;--track:#ffffff24;
+}
+html[data-theme="light"]{
+  color-scheme:light;
+  --ink:#F2F4F6;--coal:#E7EBEF;--panel:#FFFFFF;--panel2:#F7F9FB;
+  --line:#DCE1E6;--line2:#BAC3CD;--control-line:#77838F;--dim:#505B68;--dimmer:#606B77;
+  --concrete:#20262E;--acid:#485D00;--acid-deep:#394B00;--hazard:#7B6000;--tan:#75612E;
+  --bust:#B4402D;--waist:#006F87;--hips:#485D00;--thighs:#7B6000;
+  --signal:#B4402D;--holo:#006F87;--blue:#3659B7;--brass:#80601F;--track:#D2D9E0;
+}
+/* Data graphics remain separate from illustrative portraits. */
+.lineup-form{display:flex;gap:12px;align-items:end;flex-wrap:wrap;margin:18px 0}.lineup-form label{display:grid;gap:6px;color:var(--dim);font-size:12px}.lineup-form input{max-width:230px}
+.lineup-scroll{overflow:auto;border-block:1px solid var(--line);padding:24px 0 12px}.lineup-stage{display:flex;align-items:stretch;gap:18px;min-width:max-content;height:430px;padding:30px 14px 0}.lineup-person{width:120px;display:flex;flex-direction:column;min-width:0}.height-track{height:300px;position:relative;border-bottom:2px solid var(--concrete)}.height-bar{position:absolute;bottom:0;left:18px;width:7px;background:var(--acid);border-radius:3px 3px 0 0}.height-bar span{position:absolute;bottom:100%;left:0;white-space:nowrap;color:var(--concrete);font:700 14px var(--num);padding-bottom:6px}.lineup-portrait{position:absolute;bottom:8px;left:38px;width:70px;height:100px;object-fit:contain}.lineup-person>a{font:14px/1.2 var(--disp);margin-top:10px;overflow-wrap:anywhere;color:var(--concrete)}.lineup-person small{font-size:10px;color:var(--dim)}.lineup-actions{display:flex;gap:4px;margin-top:auto}.lineup-actions button{min-width:36px;min-height:40px;padding:4px}.reference-track{width:80px}.reference-track .height-bar{background:var(--waist)}.reference-track.door .height-bar{width:48px;background:none;border:3px solid var(--waist);border-bottom:0}.ruler-mark{position:absolute;left:0;width:70px;border-top:1px solid var(--line2);font:11px var(--num);color:var(--dim)}
+.guide-layout{display:grid;grid-template-columns:minmax(240px,420px) minmax(250px,1fr);gap:32px;align-items:start;margin:24px 0}.guide-figure{position:relative;margin:0;background:white;border-radius:12px;overflow:hidden}.guide-figure img{display:block;width:100%;height:auto}.guide-point{position:absolute;transform:translate(-50%,-50%);width:34px;height:34px;border:2px solid #20262e;border-radius:50%;background:#fff;color:#20262e;font:700 15px var(--num);cursor:pointer}.guide-point[aria-pressed="true"]{background:#D8FA00}.guide-tabs{display:flex;flex-wrap:wrap;gap:8px}.guide-tabs button{min-height:44px}.guide-tabs button[aria-pressed="true"]{background:var(--accent-fill);color:var(--on-accent)}.guide-copy{font-size:15px;line-height:1.8}.agent-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px 20px;margin:0}.agent-facts div{border-bottom:1px solid var(--line);padding:8px 0}.agent-facts dt{font-size:11px;color:var(--dim)}.agent-facts dd{margin:4px 0;font-size:14px;color:var(--concrete)}.reference-links{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px;font-size:12px}
+.art-viewer{width:100vw;max-width:none;height:100dvh;max-height:none;margin:0;border:0;padding:0;background:var(--panel);color:var(--concrete);font:inherit}.art-viewer[open]{display:flex;flex-direction:column}.art-viewer::backdrop{background:#000d}.art-toolbar,.art-footer{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 18px;background:var(--panel);border-block:1px solid var(--line)}.art-toolbar h2{font:22px var(--disp);margin:0}.art-toolbar label{display:flex;align-items:center;gap:8px;font-size:12px}.art-toolbar select{max-width:250px}.art-toolbar input{width:110px;accent-color:var(--acid)}.art-toolbar button{min-height:44px}.art-viewport{flex:1;min-height:100px;overflow:auto;touch-action:none;background:#aeb4bc;cursor:grab;position:relative}.art-viewport img{display:block;max-width:none;height:auto;margin:16px auto;user-select:none}.art-viewer[data-background="light"] .art-viewport{background:#f6f6f6}.art-viewer[data-background="dark"] .art-viewport{background:#15151a}.art-footer{font-size:12px}.art-footer small{flex-basis:100%;color:var(--dim)}.art-footer a{color:var(--acid)}
+@media(max-width:700px){.guide-layout{grid-template-columns:1fr;gap:18px}.guide-figure{max-width:350px;margin:auto}.guide-point{width:38px;height:38px}.lineup-stage{gap:10px}.art-toolbar,.art-footer{gap:8px;padding:8px 12px}.art-toolbar h2{font-size:18px}.art-toolbar .btn{font-size:10px;padding:8px}.art-toolbar select{max-width:170px}.art-toolbar input{width:85px}.art-footer{font-size:11px}.art-footer small{font-size:10px}.tooltabs{gap:0 16px}}
+
+body.modal-open{overflow:hidden}
+
+.height-track{flex:0 0 300px}.lineup-stage{height:auto;min-height:430px}
+
+.tool-picker{display:none}
+@media(max-width:700px){#toolsNav>a{display:none}.tool-picker{display:block;flex:1;min-width:0;min-height:44px}.tooltabs{flex-wrap:nowrap;gap:8px;padding:6px 12px}.tooltabs #settingsBtn{flex:none;margin-left:0}}
+[hidden]{display:none!important}
+.art-toolbar select{font:inherit;font-size:12px;min-height:40px;border:1px solid var(--control-line);border-radius:8px;background:var(--panel);color:var(--concrete);padding:8px}
+
+.agent-details summary{cursor:pointer;color:var(--concrete);padding:10px 0;font-weight:700}
+
+.lineup-stage{justify-content:center}.lineup-actions button{min-height:44px}
+
+:root{--dim2:var(--dimmer);--disp:'ZZZ Hongmeng','Anton','Noto Sans JP 900','Dela Gothic One','Arial Narrow',Impact,sans-serif;
+  --body:'ZZZ Hongmeng',Inter,'Noto Sans JP 900','Noto Sans JP',system-ui,-apple-system,sans-serif;
+  --num:'Chakra Petch','ZZZ Hongmeng','Noto Sans JP 900','Noto Sans JP',ui-monospace,Menlo,monospace}
+html[lang^="zh"]{--disp:'ZZZ Hongmeng','Anton','Noto Sans SC Display','Arial Narrow',Impact,sans-serif;
+  --body:'ZZZ Hongmeng',Inter,'Noto Sans SC Display','Noto Sans SC',system-ui,-apple-system,sans-serif;
+  --num:'Chakra Petch','ZZZ Hongmeng','Noto Sans SC Display','Noto Sans SC',ui-monospace,Menlo,monospace}
+html[lang^="ko"]{--disp:'ZZZ Hongmeng','S-Core Dream 9','Anton','Arial Narrow',Impact,sans-serif;
+  --body:'ZZZ Hongmeng','S-Core Dream 9',Inter,'Apple SD Gothic Neo','Malgun Gothic',system-ui,-apple-system,sans-serif;
+  --num:'Chakra Petch','ZZZ Hongmeng','S-Core Dream 9',ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--concrete);font:14px/1.6 var(--body);
+  -webkit-font-smoothing:antialiased}
+a{color:var(--acid)}
+:focus-visible{outline:2px solid var(--acid);outline-offset:2px}
+.top{max-width:1100px;margin:0 auto;padding:18px 20px;display:flex;justify-content:space-between;
+  align-items:center;gap:12px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase}
+.top a{text-decoration:none;color:var(--dim)}
+.top a:hover{color:var(--acid)}
+.top b{font-family:var(--num);color:var(--acid)}
+.langnav{display:flex;gap:10px;margin-left:auto}.langnav a{text-decoration:none}.langnav a[data-lang]{color:var(--dim)}.langnav a:hover{color:var(--acid);opacity:1}.langnav a.on{color:var(--acid);opacity:1}
+main{max-width:1100px;margin:0 auto;padding:22px 20px 60px}
+.hero{display:grid;grid-template-columns:min(340px,38vw) 1fr;gap:26px;align-items:center;
+  border-bottom:1px solid var(--line);padding-bottom:24px}
+.hero img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);background:var(--panel2)}
+.hero picture{display:block}
+.eyebrow{margin:0 0 6px;font-family:var(--num);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
+h1{margin:0 0 10px;font-family:var(--disp);font-weight:400;font-size:clamp(36px,6vw,64px);line-height:.96;
+  text-transform:uppercase;word-break:keep-all;line-break:strict}
+html[lang="ja"] h1{font-size:clamp(30px,5vw,54px);line-height:1.04;letter-spacing:.01em}
+@media(max-width:560px){.top{flex-wrap:nowrap;padding:14px 16px;gap:10px;font-size:10px;letter-spacing:.1em}.top>span{display:none}.top a{white-space:nowrap}.langnav{gap:8px;margin-left:auto}}
+.lead{margin:0 0 14px;color:var(--concrete);font-size:13px}
+.altname{margin:-6px 0 10px;color:var(--dim);font-family:var(--num);font-size:11px;letter-spacing:.08em}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px;padding:0;list-style:none}
+.chip{border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:9.5px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--concrete)}
+.chip.bust{border-color:var(--bust);color:var(--bust)}.chip.waist{border-color:var(--waist);color:var(--waist)}
+.chip.hips{border-color:var(--hips);color:var(--hips)}.chip.thighs{border-color:var(--thighs);color:var(--thighs)}
+.chip.height{border-color:var(--tan);color:var(--tan)}
+.meta{font-family:var(--num);font-size:12px;color:var(--dim);letter-spacing:.03em}
+h2{margin:30px 0 10px;font-family:var(--disp);font-weight:400;font-size:22px;text-transform:uppercase}
+h3{margin:18px 0 6px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--acid)}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+thead th{font-family:var(--num);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim)}
+tbody th{font-weight:500;color:var(--dim)}
+td{font-family:var(--num);font-weight:600}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}
+.card p{margin:0;color:var(--concrete);font-size:12.5px}
+.bars{display:grid;gap:7px}
+.prow{display:grid;grid-template-columns:64px 1fr 36px;gap:8px;align-items:center;font-size:10px;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.pbar{height:6px;background:var(--track);border-radius:99px;overflow:hidden}
+.pbar i{display:block;height:100%}
+.prow b{font-family:var(--num);text-align:right;color:var(--concrete);font-size:11px}
+.note{border-left:2px solid var(--hazard);padding-left:10px;color:var(--dim);font-size:12px;margin-top:12px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.gallery figure{margin:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--panel2)}
+.gallery img{width:100%;height:auto;display:block;background:var(--panel2)}
+.gallery figcaption{padding:8px 10px;font-size:10.5px;color:var(--dim)}
+.gallery b{display:block;color:var(--concrete);font-size:12px}
+.nav{display:flex;justify-content:space-between;gap:12px;margin-top:34px;border-top:1px solid var(--line);padding-top:16px}
+.nav a{text-decoration:none;font-family:var(--num);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.nav span{color:var(--dim)}
+footer{max-width:1100px;margin:0 auto;padding:0 20px 60px;color:var(--dim2);font-size:11px;line-height:1.7}
+footer a{color:var(--dim)}
+footer .rule{border-top:1px solid var(--line);padding-top:14px}
+.btn{display:inline-block;border:1px solid var(--control-line);border-radius:999px;padding:8px 14px;
+  font-family:var(--num);font-size:10px;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;color:var(--concrete)}
+.btn:hover{border-color:var(--acid);color:var(--acid)}
+.btn.primary{background:var(--accent-fill);border-color:var(--acid);color:var(--on-accent);font-weight:800}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.faq dt{font-weight:700;margin-top:14px;color:var(--concrete)}
+.faq dd{margin:4px 0 0;color:var(--concrete)}
+.small{font-size:11px;color:var(--dim2)}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.hero img{max-width:320px}
+  .grid2{grid-template-columns:1fr}}
+@media print{body{background:#fff;color:#000}.top,footer,.nav,.btns{display:none}
+  .hero img{max-height:300px;width:auto}.card{background:#fff}.lead,.card p{color:#333}
+  a{color:#000}}
+
+@media(prefers-color-scheme:light){
+html:not([data-theme]){
+  color-scheme:light;
+  --ink:#F2F4F6;--coal:#E7EBEF;--panel:#FFFFFF;--panel2:#F7F9FB;
+  --line:#DCE1E6;--line2:#BAC3CD;--control-line:#77838F;--dim:#505B68;--dimmer:#606B77;
+  --concrete:#20262E;--acid:#485D00;--acid-deep:#394B00;--hazard:#7B6000;--tan:#75612E;
+  --bust:#B4402D;--waist:#006F87;--hips:#485D00;--thighs:#7B6000;
+  --signal:#B4402D;--holo:#006F87;--blue:#3659B7;--brass:#80601F;--track:#D2D9E0;
+}
+}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"FAQPage","@id":"https://nullhollow.github.io/zzz-measurements/ko/methodology.html#faq","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"수치는 어디서 왔나요?","acceptedAnswer":{"@type":"Answer","text":"공식 키가 있으면 공식 값을 씁니다. 나머지 둘레는 공식 3D 모델을 따라 잰 값이므로, 게임 내 수치가 아니라 추정치로 봐 주세요. 엘드레다의 데이터는 modelmetrics.net이 아니라 사이트 운영자의 가정과 다른 자료를 바탕으로 한 자체 추정치입니다. US/EU 사이즈도 추정치입니다. 카프카의 치수는 hiragara가 제공한 3D 모델을 바탕으로 사이트 운영자가 AI의 도움을 받아 계산했습니다. UK/US/EU 브라 사이즈는 데이터셋 기준의 추정치입니다."}},{"@type":"Question","name":"호시미 미야비가 170cm와 152.1cm로 나오는 이유는?","acceptedAnswer":{"@type":"Answer","text":"공식 170cm에는 귀가 포함되어 있습니다. 화면에서는 정수리 기준 약 152.1cm를 키로 쓰고, 공식 수치는 메모와 내보낸 데이터에 남겨 둡니다."}},{"@type":"Question","name":"카드의 수치는 기본 모델인가요?","acceptedAnswer":{"@type":"Answer","text":"기본 모델이 기준이며, 제인 도만 측정된 「Nocturne of Light」 의상을 유일한 기록으로 씁니다. 측정된 다른 의상은 자체 수치와 차이를 가진 채 따로 저장되므로, 카드나 순위에서 두 의상의 수치가 섞이지 않습니다."}},{"@type":"Question","name":"실루엣 분류는 무슨 뜻인가요?","acceptedAnswer":{"@type":"Answer","text":"가슴, 허리, 엉덩이 세 둘레를 씁니다. 모래시계형은 가슴/허리와 엉덩이/허리가 모두 1.45 이상이고 가슴과 엉덩이의 차이가 15% 이내인 경우, 일자형은 굴곡이 1.30 미만이거나 차이가 25%를 넘는 경우이며, 나머지는 균형형입니다. 체형(Build)은 가슴과 엉덩이의 백분위를 비교합니다. 허리, 엉덩이, 허벅지 분류는 각 둘레를 전체에서 3등분한 것입니다."}},{"@type":"Question","name":"수동 분류란 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"둘레 수치 하나만으로는 실제 느낌이 잘 드러나지 않는 캐릭터가 있습니다. 그중 13명은 눈으로 보고 굵은 편으로 분류했으며, 상세 화면에 「수동 분류」로 표시합니다."}},{"@type":"Question","name":"컵 구간은 어떻게 계산하나요?","acceptedAnswer":{"@type":"Answer","text":"출처의 UK 컵 표기(A-B, C-D, DD-E, F-G, GG+)를 따릅니다. 착용 사이즈 추천이 아니라 출처의 사이즈 표기입니다."}},{"@type":"Question","name":"데이터를 다시 써도 되나요?","acceptedAnswer":{"@type":"Answer","text":"치수는 modelmetrics.net에서 모았고, 캐릭터 이미지는 © HoYoverse이며 ZZZ Fandom wiki를 통해 공정 이용으로 싣고 있습니다. 출처 링크를 남기고 해당 권리를 존중해 주세요. 엘드레다의 데이터는 modelmetrics.net이 아니라 사이트 운영자의 가정과 다른 자료를 바탕으로 한 자체 추정치입니다. US/EU 사이즈도 추정치입니다. 카프카의 치수는 hiragara가 제공한 3D 모델을 바탕으로 사이트 운영자가 AI의 도움을 받아 계산했습니다. UK/US/EU 브라 사이즈는 데이터셋 기준의 추정치입니다."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ZZZ Measurements","item":"https://nullhollow.github.io/zzz-measurements/"},{"@type":"ListItem","position":2,"name":"산출 방법 및 FAQ","item":"https://nullhollow.github.io/zzz-measurements/ko/methodology.html"}]}]}</script>
+</head>
+<body>
+<header class="top">
+  <a href="../">← ZZZ 치수</a>
+  <nav class="langnav" aria-label="언어">
+    <a href="../methodology.html" data-lang="en" class="" onclick="try{localStorage.setItem('zzz-lang','en')}catch(e){}">EN</a>
+    <a href="../ja/methodology.html" data-lang="ja" class="" onclick="try{localStorage.setItem('zzz-lang','ja')}catch(e){}">日本語</a>
+    <a href="../zh/methodology.html" data-lang="zh" class="" onclick="try{localStorage.setItem('zzz-lang','zh')}catch(e){}">中文</a>
+    <a href="../ko/methodology.html" data-lang="ko" class="on" onclick="try{localStorage.setItem('zzz-lang','ko')}catch(e){}">한국어</a>
+  </nav>
+  <span>젠레스 존 제로 · <b>51</b>명</span>
+</header>
+
+<main>
+  <p class="eyebrow">산출 방법 및 FAQ</p>
+  <h1>산출 방법 및 FAQ</h1>
+  <p class="lead">이 차트가 무엇을 재고 어디까지가 추정인지, 각 분류와 백분위를 어떻게 계산하는지 최대한 솔직하게 설명합니다. 엘드레다의 데이터는 modelmetrics.net이 아니라 사이트 운영자의 가정과 다른 자료를 바탕으로 한 자체 추정치입니다. US/EU 사이즈도 추정치입니다. 카프카의 치수는 hiragara가 제공한 3D 모델을 바탕으로 사이트 운영자가 AI의 도움을 받아 계산했습니다. UK/US/EU 브라 사이즈는 데이터셋 기준의 추정치입니다.</p>
+
+  <h2>측정 가이드</h2><p>개념도이며, 캐릭터를 실측한 그림이나 출처의 측정 과정을 재현한 것이 아닙니다. 둘레는 이미지상의 폭이 아니라 몸을 한 바퀴 두른 길이입니다.</p>
+  <div class="guide-layout"><figure class="guide-figure"><img src="../images/measurement-guide.webp" alt="중립적인 마네킹의 정면도와 측면도. 키를 나타내는 선과 가슴, 밑가슴, 허리, 엉덩이, 허벅지 둘레를 나타내는 고리가 그려져 있습니다." width="1024" height="1536" loading="lazy"></figure><dl><dt>키</dt><dd>키는 바닥에서 머리 꼭대기까지입니다. 차트 수치에 귀 같은 부위가 포함된 경우 유효 키를 사용합니다. 호시미 미야비는 차트의 170cm 메모를 남기고, 비교에는 152.1cm를 사용합니다.</dd><dt>가슴</dt><dd>가슴둘레는 가슴에서 가장 두드러진 높이의 둘레입니다. 이미지로는 둘레를 알 수 없으므로 출처 값을 따릅니다.</dd><dt>밑가슴</dt><dd>밑가슴둘레는 가슴 바로 아래의 둘레입니다. 출처의 브라 밴드 표기는 따로 표시하며, 둘레에서 환산한 값이 아닙니다.</dd><dt>허리</dt><dd>허리둘레는 허리 부분의 둘레입니다. 모델 형태와 의상에 관한 출처의 주의 사항도 함께 확인해 주세요.</dd><dt>엉덩이</dt><dd>엉덩이둘레는 엉덩이에서 가장 두드러진 부분의 둘레입니다. 이 그림은 위치를 보여 주는 참고용입니다.</dd><dt>허벅지</dt><dd>허벅지둘레는 출처에 기록된 허벅지 윗부분의 둘레입니다. 측정값이 없으면 알 수 없음으로 두며, 0으로 취급하지 않습니다.</dd></dl></div>
+  <div class="grid2"><section class="card"><h3>키</h3><p>공식 키는 공식 표기를 따르며, 귀나 신발, 액세서리가 포함될 수 있습니다. 귀 같은 메모가 있으면 정수리 기준 높이를 「키」로 쓰고, 공식 수치는 메모로 남깁니다(호시미 미야비: 공식 170cm / 표시 152.1cm). 내보낸 데이터에서는 <code>stature_cm</code>가 비교용 값입니다.</p></section><section class="card"><h3>둘레</h3><p>가슴, 밑가슴, 허리, 엉덩이, 허벅지는 공식 3D 모델을 따라 감아서 잰 값입니다. 옷이나 갑옷, 빠진 형상 때문에 일부는 추정치가 되며, 출처의 메모는 원문 그대로 남겨 둡니다.</p></section><section class="card"><h3>비교 기준</h3><p>비교 화면에서 「실측값」과 「키 대비」를 전환할 수 있습니다. 키 대비 값은 가슴, 밑가슴, 허리, 엉덩이, 허벅지 둘레가 키에서 차지하는 비율이며, <code>둘레 ÷ 키 × 100</code>로 계산합니다. 분모는 <code>stature_cm</code>이고, 호시미 미야비는 정수리 높이 152.1cm를 씁니다. 소수점 한 자리까지 표시하며, 표시된 값이 같으면 함께 강조합니다. 허리는 작은 값, 엉덩이와 허벅지는 큰 값을 강조하고, 측정값이 없는 항목은 비교에서 뺍니다. 키, 브라 사이즈, 분류 값은 바뀌지 않습니다. 순위, 필터, 백분위, 시상대는 기존 계산을 그대로 쓰며, 측정된 의상 기록도 따로 다룹니다.</p></section><section class="card"><h3>기본 모델과 의상</h3><p>기본 모델이 기준입니다. 예외는 제인 도로, 측정된 「Nocturne of Light」 의상을 정식 값으로 씁니다. 측정된 다른 의상은 자체 수치와 차이를 가진 별도 기록이며, 이미지만 있는 의상은 측정하지 않으므로 수치, 필터, 순위에 영향을 주지 않습니다.</p></section><section class="card"><h3>브라 사이즈</h3><p>컵 구간은 출처의 UK 컵 표기(A-B, C-D, DD-E, F-G, GG+)를 따릅니다. UK / US / EU 표기는 비교용으로 출처에서 옮겨 온 것이며, 착용 사이즈 추천이 아닙니다. UK 컵은 D &lt; DD &lt; E &lt; F &lt; FF &lt; G &lt; GG &lt; H &lt; HH &lt; J &lt; JJ 순으로 커집니다. 컵 알파벳이 같으면 밴드로 순서를 정합니다. UK, US, EU 표기는 출처 값입니다. 같은 알파벳이라도 부피가 같다는 뜻은 아닙니다. <a href="https://katherinehamilton.com/pages/international-bra-size-chart" rel="noopener">UK 컵 순서 출처</a>.</p></section><section class="card"><h3>분류</h3><p>허리, 엉덩이, 허벅지 분류는 실측 cm 기준으로 전체를 3등분한 것입니다. 체형(Build)은 가슴과 엉덩이의 백분위를 비교합니다. 실루엣은 세 둘레를 모두 씁니다. 모래시계형은 가슴/허리와 엉덩이/허리가 모두 1.45 이상이고 가슴과 엉덩이의 차이가 15% 이내인 경우, 일자형은 굴곡이 1.30 미만이거나 가슴과 엉덩이의 차이가 25%를 넘는 경우이며, 나머지는 균형형입니다. 13명은 눈으로 보고 굵은 편으로 수동 분류했으며, 그렇게 표시합니다.</p></section><section class="card"><h3>백분위</h3><p>막대는 실측 cm 값의 전체 내 백분위이며, 키는 정수리 기준입니다. 0이 가장 작은 값, 50이 중간, 100이 가장 큰 값입니다.</p></section><section class="card"><h3>수정</h3><p>모든 캐릭터 페이지에 미리 채워진 「오류 제보」 링크가 있습니다. 수정 내역은 변경 기록에 남기며, 데이터셋에는 스키마 버전과 갱신 날짜가 들어 있습니다.</p></section><section class="card"><h3>같은 키로 환산</h3><p>비교할 항목을 고르고 원하는 순서로 바꿀 수 있습니다. 차이 기준을 지정하면 실측값과 같은 키 환산값은 cm 또는 인치로, 키 대비 둘레는 %p로 차이를 부호와 함께 표시합니다. 같은 키 환산값은 「둘레 ÷ 유효 키 × 기준 키」로 계산하며, 몸 전체가 같은 비율로 커지거나 작아진다고 가정합니다. 가정에 따른 환산값일 뿐, 새로운 측정값이나 신체 변화를 예측한 값이 아닙니다. 키는 항상 실측값을 유지합니다. 반올림한 값이 같으면 함께 강조하고, 측정값이 없으면 차이를 표시하지 않습니다. 비교 세트에 이름을 붙여 이 기기에 저장하거나, 표시 중인 항목과 기준과의 차이를 CSV로 내보낼 수 있습니다.</p></section><section class="card"><h3>닮은꼴 찾기</h3><p>기본 가중치는 가슴 25, 허리 20, 엉덩이 20, 허벅지 15, 키 20이며 밑가슴은 사용하지 않습니다. 가중치는 0~100 사이에서 바꿀 수 있습니다. 항목별 차이의 절댓값을 기본 모델 전체에서 해당 항목의 범위로 나눈 뒤, 지정한 가중치로 평균을 냅니다. 한쪽이라도 측정값이 없는 항목은 건너뛰고 남은 가중치로 다시 정규화합니다. 공통 항목의 가중치 합이 0이면 결과를 표시하지 않습니다. 키 대비 매칭에는 「둘레 ÷ 유효 키 × 100」을 사용하며, 키 항목은 이때도 실측 키로 비교합니다. 결과를 펼치면 항목별 차이와 거리에 대한 기여도를 확인할 수 있습니다.</p></section><section class="card"><h3>도구</h3><p>분포는 현재 필터를 적용한 전체에서 측정값이 없는 항목을 빼고 집계합니다. 구간은 같은 폭으로 나누며 최댓값은 마지막 구간에 포함합니다. 모든 값이 같으면 구간은 하나입니다. 비교에서 선택한 체형은 위치만 표시할 뿐 인원에 더하지 않습니다. 「어느 쪽이 클까?」는 기본 모델의 측정 기록을 사용하며, 소수점 첫째 자리까지 표시된 값으로 크고 작음과 같음을 판정합니다. 샌드박스 체형은 임시로 만든 가상의 값이며 전체 인원, 분류, 백분위, 순위, 게임 문제, 내보내기에 포함하지 않습니다. 공유 링크에는 샌드박스 입력값과 도구 설정도 들어갑니다. 컵 분포는 선택한 UK/US/EU 방식의 출처 표기로 묶고, 밴드까지 포함한 사이즈를 그대로 유지합니다. 표기에 따른 분류이므로 cm 환산이나 수치 평균, 중앙값은 없습니다. UK는 D &lt; DD &lt; E &lt; F &lt; FF &lt; G &lt; GG &lt; H &lt; HH &lt; J &lt; JJ 순서이며, 그 밖의 표기는 알파벳 순서로 묶되 D의 반복형은 한데 모읍니다. 막대나 밴드 × 컵 칸을 선택하면 해당 에이전트를 확인하고 비교에 추가할 수 있습니다. 밴드 표기는 선택한 출처 방식을 따르며 부피를 추정하지 않습니다.</p></section><section class="card"><h3>설정</h3><p>측정 설정에서 모든 대화형 페이지의 길이 단위(cm/인치)와 출처의 UK/US/EU 브라 사이즈 표기를 고를 수 있습니다. 설정은 이 기기에 저장되며 공유 링크에도 포함됩니다. 각 방식의 값은 출처 표기를 그대로 사용하며, 환산으로 추정하지 않습니다. 순위, 필터, 게임 판정은 UK 컵 규칙을 따릅니다. UK 컵 순서(G &lt; GG &lt; H &lt; HH &lt; J &lt; JJ)를 먼저 보고, 같은 컵이면 밴드로 비교합니다. 컵 게임은 같은 점수까지 포함해 UK 기준 점수로 판정하며, 다른 표기를 선택한 경우 UK 기준값도 함께 보여 줍니다. 언어와 테마도 같은 설정 창에서 바꿀 수 있습니다.</p></section><section class="card"><h3>분석</h3><p>분석에는 공통 필터를 적용한 뒤의 기본 모델 기록만 사용합니다. 상관관계는 완전한 쌍이 3개 이상이고 두 축 모두 분산이 0이 아닐 때 피어슨 상관계수와 최소제곱 회귀선으로 나타냅니다. 키 대비 둘레는 둘레 ÷ 유효 키 × 100입니다. 비율 프리셋은 반올림 전 치수로 계산하며, 중앙값과 사분위수는 선형 보간으로 구합니다. 범위는 경곗값을 포함하며, 필요한 측정값이 없으면 조건에 맞지 않습니다. 근접 후보는 충족하지 못한 범위의 수, 그다음 전체 범위로 정규화한 부족분의 합 순으로 정렬합니다. 체형 패턴은 기본 모델 전체에서 반올림하지 않은 중간 순위 백분위를 사용하며, 필터를 적용해도 고정됩니다. 측정값이 없으면 선이 끊깁니다. 축 드래그는 보간한 분위수로 같은 실측 cm 범위 필터를 설정합니다. 컵별 치수는 출처의 UK/US/EU 표기로 묶어 치수별 중앙값, 사분위수, 항목별 인원을 보여 주며, 추정 사이즈 표기도 그대로 둡니다. 컵 알파벳의 평균이나 추정 컵 부피는 계산하지 않습니다.</p></section></div>
+
+  <h2>데이터와 내보내기</h2>
+  <p class="lead">대화형 차트와 정적 페이지는 같은 수치를 씁니다. 내려받는 파일은 스키마 v2, 갱신일 2026-11-02 기준입니다.</p>
+  <div class="btns">
+    <a class="btn primary" href="../data/measurements.json" download>JSON 데이터셋</a>
+    <a class="btn" href="../data/measurements.csv" download>CSV 내보내기</a>
+    <a class="btn" href="../data/schema.json" download>JSON 스키마</a>
+  </div>
+  <p class="small">공식 이미지는 HoYoverse 공식 사이트와 ZZZ Fandom wiki에서 가져왔습니다. © HoYoverse(공정 이용). 자동 생성된 해설은 게임 내 설정이 아닙니다.</p>
+
+  <h2>FAQ</h2>
+  <dl class="faq"><dt>수치는 어디서 왔나요?</dt><dd>공식 키가 있으면 공식 값을 씁니다. 나머지 둘레는 공식 3D 모델을 따라 잰 값이므로, 게임 내 수치가 아니라 추정치로 봐 주세요. 엘드레다의 데이터는 modelmetrics.net이 아니라 사이트 운영자의 가정과 다른 자료를 바탕으로 한 자체 추정치입니다. US/EU 사이즈도 추정치입니다. 카프카의 치수는 hiragara가 제공한 3D 모델을 바탕으로 사이트 운영자가 AI의 도움을 받아 계산했습니다. UK/US/EU 브라 사이즈는 데이터셋 기준의 추정치입니다.</dd><dt>호시미 미야비가 170cm와 152.1cm로 나오는 이유는?</dt><dd>공식 170cm에는 귀가 포함되어 있습니다. 화면에서는 정수리 기준 약 152.1cm를 키로 쓰고, 공식 수치는 메모와 내보낸 데이터에 남겨 둡니다.</dd><dt>카드의 수치는 기본 모델인가요?</dt><dd>기본 모델이 기준이며, 제인 도만 측정된 「Nocturne of Light」 의상을 유일한 기록으로 씁니다. 측정된 다른 의상은 자체 수치와 차이를 가진 채 따로 저장되므로, 카드나 순위에서 두 의상의 수치가 섞이지 않습니다.</dd><dt>실루엣 분류는 무슨 뜻인가요?</dt><dd>가슴, 허리, 엉덩이 세 둘레를 씁니다. 모래시계형은 가슴/허리와 엉덩이/허리가 모두 1.45 이상이고 가슴과 엉덩이의 차이가 15% 이내인 경우, 일자형은 굴곡이 1.30 미만이거나 차이가 25%를 넘는 경우이며, 나머지는 균형형입니다. 체형(Build)은 가슴과 엉덩이의 백분위를 비교합니다. 허리, 엉덩이, 허벅지 분류는 각 둘레를 전체에서 3등분한 것입니다.</dd><dt>수동 분류란 무엇인가요?</dt><dd>둘레 수치 하나만으로는 실제 느낌이 잘 드러나지 않는 캐릭터가 있습니다. 그중 13명은 눈으로 보고 굵은 편으로 분류했으며, 상세 화면에 「수동 분류」로 표시합니다.</dd><dt>컵 구간은 어떻게 계산하나요?</dt><dd>출처의 UK 컵 표기(A-B, C-D, DD-E, F-G, GG+)를 따릅니다. 착용 사이즈 추천이 아니라 출처의 사이즈 표기입니다.</dd><dt>데이터를 다시 써도 되나요?</dt><dd>치수는 modelmetrics.net에서 모았고, 캐릭터 이미지는 © HoYoverse이며 ZZZ Fandom wiki를 통해 공정 이용으로 싣고 있습니다. 출처 링크를 남기고 해당 권리를 존중해 주세요. 엘드레다의 데이터는 modelmetrics.net이 아니라 사이트 운영자의 가정과 다른 자료를 바탕으로 한 자체 추정치입니다. US/EU 사이즈도 추정치입니다. 카프카의 치수는 hiragara가 제공한 3D 모델을 바탕으로 사이트 운영자가 AI의 도움을 받아 계산했습니다. UK/US/EU 브라 사이즈는 데이터셋 기준의 추정치입니다.</dd></dl>
+
+  <div class="btns"><a class="btn primary" href="../">차트로 돌아가기</a></div>
+</main>
+<footer><div class="rule">
+<b>주요 출처:</b> modelmetrics.net · <i>젠레스 존 제로 · 여성 캐릭터 신체 치수</i>. 데이터 갱신 <time datetime="2026-11-02">2026-11-02</time>.<br>
+공식 이미지는 HoYoverse 공식 사이트와 ZZZ Fandom wiki에서 가져왔습니다. © HoYoverse(공정 이용). 자동 생성된 해설은 게임 내 설정이 아닙니다.<br>
+엘드레다의 데이터는 modelmetrics.net이 아니라 사이트 운영자의 가정과 다른 자료를 바탕으로 한 자체 추정치입니다. US/EU 사이즈도 추정치입니다. 카프카의 치수는 hiragara가 제공한 3D 모델을 바탕으로 사이트 운영자가 AI의 도움을 받아 계산했습니다. UK/US/EU 브라 사이즈는 데이터셋 기준의 추정치입니다.<br>
+<a href="../ko/methodology.html">산출 방법 및 FAQ</a> · <a href="../data/measurements.json" download>데이터셋 (JSON)</a> ·
+<a href="../data/measurements.csv" download>CSV</a> · <a href="https://github.com/nullhollow/zzz-measurements" rel="noopener">소스 저장소</a>
+</div></footer>
+</body>
+</html>

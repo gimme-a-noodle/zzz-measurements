@@ -76,7 +76,7 @@ function bindFigurePicker(id,records,fn,optional=false){
   input.oninput=()=>input.setCustomValidity('');
   input.onchange=()=>{
     const value=input.value.trim().toLocaleLowerCase(state.lang);
-    const d=records.find(d=>[nameOf(d),d.display,d.name,d.slug,d.name_ja,d.name_zh].some(n=>n&&n.toLocaleLowerCase(state.lang)===value));
+    const d=records.find(d=>[nameOf(d),d.display,d.name,d.slug,d.name_ja,d.name_zh,d.name_ko].some(n=>n&&n.toLocaleLowerCase(state.lang)===value));
     if(!d&&!(optional&&!value)){input.setCustomValidity(t('chooseKnownFigure'));input.reportValidity();return;}
     requestAnimationFrame(()=>{
       const nextId=document.activeElement?.id;fn(d?.slug||'');

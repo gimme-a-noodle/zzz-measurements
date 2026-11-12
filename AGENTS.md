@@ -15,7 +15,7 @@ The project is a hand-curated dataset with a generated site. Treat
 - Prefer one clear label and a value over a label, a helper line and a caption.
 - Reuse existing sections, CSS variables and components. Do not add a panel for
   a single number or a new badge for a value the layout already communicates.
-- Keep English, Japanese and Chinese copy equally finished. No placeholders or
+- Keep English, Japanese, Chinese and Korean copy equally finished. No placeholders or
   literal translations.
 - Do not add confidence badges. `confidence` stays in the exports/provenance.
 - Bust difference is display/export data. Do not use it for ranking, filtering
@@ -27,7 +27,7 @@ The project is a hand-curated dataset with a generated site. Treat
 | --- | --- |
 | `measurements3.3.csv` | The only hand-edited measurement source. |
 | `tools/build_data.py` | CSV → `tools/data.json`; classes, percentiles, outfits, provenance. |
-| `tools/describe.py` | Generated English/Japanese/Chinese profile prose. |
+| `tools/describe.py` | Generated English/Japanese/Chinese/Korean profile prose. |
 | `tools/build_html.py` | Builds the interactive `index.html` from `tools/template.html`. |
 | `tools/template.html` | Interactive UI, styles, client-side live calculations and modal. |
 | `tools/card.tmpl.html` | Shared card markup used by the static cards and the live re-render. |
@@ -35,7 +35,7 @@ The project is a hand-curated dataset with a generated site. Treat
 | `tools/pack_site.py` | Full pipeline, asset copy, service worker, sitemap, link check → `docs/`. |
 | `tools/validate.py` | Data and packed-site validation. |
 | `tools/meta.json` | Schema version, data date, rights and field documentation. |
-| `tools/localized_names.json` | Official Japanese/Chinese names and HoYoverse source URLs. |
+| `tools/localized_names.json` | Official Japanese/Chinese/Korean names and HoYoverse source URLs. |
 | `character_images/` | Portraits, outfit art and generated responsive thumbs. |
 | `images/` | Sheet crops used by profiles and comparison views. |
 | `fonts/` | Bundled ZZZ subset and fallback fonts. |
@@ -83,8 +83,8 @@ cd docs
 python3 -m http.server 8765
 ```
 
-At the time of writing the baseline is **49 displayed entries, 147 localized
-profile pages, 643 packed files, 25.0 MB and 0 broken local references**. Treat
+At the time of writing the baseline is **51 displayed entries, 204 localized
+profile pages, 798 packed files, 145.9 MB and 0 broken local references**. Treat
 these as regression checks, not constants. The validator recalculates the
 expected roster count; update the manual counts in `README.md` and `DEPLOY.md`
 when the roster or shipped file total changes.
@@ -172,11 +172,11 @@ when the roster or shipped file total changes.
    `python3 tools/make_thumbs.py --force`.
 5. Add the official localized name and source URLs to
    `tools/localized_names.json`, keyed by the **slug** (for example
-   `"phoenix"`), with `ja`, `zh`, `source_ja` and `source_zh`.
+   `"phoenix"`), with `ja`, `zh`, `ko`, `source_ja`, `source_zh` and `source_ko`.
 6. Add outfits if applicable (below).
 7. Set `tools/meta.json` `data_updated` to the current ISO date. Change
    `schema_version` only for a breaking export change.
-8. Run the full pack and validator. Check all three profile URLs, the card, the
+8. Run the full pack and validator. Check all four profile URLs, the card, the
    modal, thumbnails and the dataset exports. No ranking edits should be
    needed.
 9. Update the manual counts in `README.md` / `DEPLOY.md` if the roster or
@@ -219,25 +219,29 @@ when the roster or shipped file total changes.
 
 ## Localization
 
-The three locales are English at `/characters/`, Japanese at
-`/ja/characters/` and Simplified Chinese at `/zh/characters/`. Method pages
+The four locales are English at `/characters/`, Japanese at
+`/ja/characters/`, Simplified Chinese at `/zh/characters/` and Korean at
+`/ko/characters/`. Method pages
 mirror the same paths. Generated `hreflang` alternates and the sitemap must
 stay in sync.
 
 - Use the official HoYoverse names, not literal translations and not Fandom
-  romanizations. Record both source URLs in `tools/localized_names.json`.
-- `build_data.py` attaches `name_ja`/`name_zh`; `describe.py` generates
-  `desc_ja_cm`, `desc_ja_in`, `desc_zh_cm`, `desc_zh_in`, `read_ja`, `read_zh`,
-  `tags_ja`, `tags_zh`, `notes_ja` and `notes_zh`. Do not hand-edit generated
+  romanizations. Record the `source_ja`, `source_zh` and `source_ko` URLs in
+  `tools/localized_names.json`.
+- `build_data.py` attaches `name_ja`/`name_zh`/`name_ko`; `describe.py`
+  generates `desc_<lang>_cm`, `desc_<lang>_in`, `read_<lang>`, `tags_<lang>` and
+  `notes_<lang>` for `ja`, `zh` and `ko`. Do not hand-edit generated
   pages to fix copy — change the generators.
-- Japanese and Chinese copy should read natively, not like translated English.
-  Keep units localized consistently (`cm` / `インチ`, `厘米` / `英寸`).
-- When adding a new chart note, add its Japanese and Chinese mapping to
-  `NOTE_JA` / `NOTE_ZH` in `describe.py`. An unmapped note falls back to
+- Japanese, Chinese and Korean copy should read natively, not like translated
+  English. Keep units localized consistently (`cm` / `インチ`, `厘米` / `英寸`,
+  `cm` / `인치`). Korean particles (은/는, 을/를, (으)로) follow the final sound
+  of the preceding name; use `josa()` in `describe.py`, not `을(를)`-style text.
+- When adding a new chart note, add its Japanese, Chinese and Korean mapping to
+  `NOTE_JA` / `NOTE_ZH` / `NOTE_KO` in `describe.py`. An unmapped note falls back to
   English and is a bug.
 - Interactive UI strings live in the `I18N` object in `tools/template.html`;
   static-page strings live in `PAGE` in `tools/build_pages.py`. Add every new
-  string to all three languages in both places.
+  string to all four languages in both places.
 - Dataset/export fields stay English. Localized copy uses the official names
   and natural phrasing.
 
@@ -296,6 +300,11 @@ labels where the section heading and values already say it.
   fallback chain to Noto Sans JP 900 is intentional. Test Japanese punctuation
   (`・`, `見`, `長`, `開`, `時`) when touching fonts. Rebuild subsets with
   `tools/update_cjk_fonts.py` or `tools/subset_zzz_font.py`, then repack.
+- Korean uses **S-Core Dream 9 Black**, the Korean client's UI face. Its
+  licence forbids modifying the file, so `fonts/SCDream9.otf` ships as the
+  unmodified official OTF; do not subset or convert it without written
+  permission from S-Core. `tools/fetch_ko_font.py` refetches it and the
+  validator checks its SHA-256 and Hangul coverage.
 - Character art is © HoYoverse, shown as fair use; measurements are compiled
   from modelmetrics.net. Keep the footer, methodology and source attribution
   intact. Do not relicense artwork or fonts.
@@ -313,7 +322,7 @@ git diff --check
 
 Then inspect the packed site locally:
 
-- all three language versions of a changed profile, plus the methodology page
+- all four language versions of a changed profile, plus the methodology page
 - card, table, filters, unit toggle, language switch, comparison tray and modal
 - outfit modal/gallery: AVIF is selected in a supporting browser; WebP remains
   the fallback
@@ -324,7 +333,7 @@ Then inspect the packed site locally:
   broken references
 
 `validate.py` checks arithmetic, conversions, classes/percentiles, assets
-(including outfit AVIF), all three profile pages, names, JSON-LD, canonical
+(including outfit AVIF), all four profile pages, names, JSON-LD, canonical
 URLs, the sitemap, the service worker, `docs/` hygiene and local links. It does
 not check visual layout, translation quality, JS/Python parity or dynamic
 image paths; verify those manually.
@@ -374,14 +383,14 @@ result.
 | A renamed character 404s | Slugs are public URLs; keep the old slug or add a redirect/migration. |
 | Raw PNGs inflate `docs/` | Move source files out of `images/`, `character_images/` or `fonts/`. |
 | `--no-rebuild` shows stale data | It reuses `index.html`; run the full pack after source changes. |
-| New locale string shows English | Add it to all three locales in both `I18N` and `PAGE`. |
-| New note is English in JA/ZH | Add the mapping to `NOTE_JA` / `NOTE_ZH`. |
+| New locale string shows English | Add it to all four locales in both `I18N` and `PAGE`. |
+| New note is English in JA/ZH/KO | Add the mapping to `NOTE_JA` / `NOTE_ZH` / `NOTE_KO`. |
 | Wrong package/site URL in canonical tags | Rebuild with the production `--site-url`; do not patch generated HTML. |
 
 ## Definition of done
 
 - `pack_site.py` and `validate.py` pass with zero broken references.
-- The changed data appears correctly in English, Japanese and Chinese, on both
+- The changed data appears correctly in English, Japanese, Chinese and Korean, on both
   the interactive page and the static profiles.
 - Derived values come from raw data; no ranking, podium or percentile was
   hand-edited.

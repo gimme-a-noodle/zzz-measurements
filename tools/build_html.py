@@ -198,7 +198,7 @@ def render_interactive(tools=False):
     if tools:
         structured = json.dumps({'@context': 'https://schema.org', '@type': 'WebPage',
                                  'url': '__SITE_URL__tools.html', 'name': title,
-                                 'description': description, 'inLanguage': ['en', 'ja', 'zh'],
+                                 'description': description, 'inLanguage': ['en', 'ja', 'zh', 'ko'],
                                  'isPartOf': {'@id': '__SITE_URL__#website'}}, ensure_ascii=False)
         page = re.sub(r'<header class="hero">.*?<div class="film".*?</div>',
                       '<header class="toolsheader"><h1 data-i18n="toolsTitle">Comparison tools</h1></header>', page, flags=re.S)
@@ -258,7 +258,7 @@ head = head.replace('property="og:url" content="https://nullhollow.github.io/zzz
 head = re.sub(r'<script type="application/ld\+json">.*?</script>', '<script type="application/ld+json">' + json.dumps({
     '@context': 'https://schema.org', '@type': 'WebPage', 'name': 'Favourites · ZZZ Measurements',
     'url': 'https://nullhollow.github.io/zzz-measurements/favourites.html',
-    'description': favourite_copy['en']['favDescription'], 'inLanguage': ['en', 'ja', 'zh'],
+    'description': favourite_copy['en']['favDescription'], 'inLanguage': ['en', 'ja', 'zh', 'ko'],
     'isPartOf': {'@id': 'https://nullhollow.github.io/zzz-measurements/#website'},
 }, ensure_ascii=False) + '</script>', head, flags=re.S)
 nav = re.search(r'<nav class="site-nav".*?</nav>', base, re.S)[0].replace(' aria-current="page"', '')
@@ -267,7 +267,7 @@ hero = re.search(r'<header class="hero">.*?<div class="film".*?</div>', base, re
 hero = hero.replace('MEASUREMENTS', 'FAVOURITES')
 hero = re.sub(r'<h2>.*?</h2>', '<h2 data-i18n="favSubtitle">Your agents. Your order.</h2>', hero, flags=re.S)
 hero = re.sub(r'    <div class="meta">.*?</div>', '', hero, flags=re.S)
-favourite_data = [{k: d[k] for k in ('slug', 'display', 'name_ja', 'name_zh', 'official', 'tags', 'tags_ja', 'tags_zh', 'bust_cm', 'waist_cm', 'hip_cm', 'thigh_cm', 'stature_cm', 'uk', 'us', 'eu', 'thigh_pin')} for d in DATA]
+favourite_data = [{k: d[k] for k in ('slug', 'display', 'name_ja', 'name_zh', 'name_ko', 'official', 'tags', 'tags_ja', 'tags_zh', 'tags_ko', 'bust_cm', 'waist_cm', 'hip_cm', 'thigh_cm', 'stature_cm', 'uk', 'us', 'eu', 'thigh_pin')} for d in DATA]
 page = (ROOT / 'tools/favourites.tmpl.html').read_text()
 for token, value in {
     'HEAD': head, 'NAV': nav, 'HERO': hero, 'REPO': PERMALINK,

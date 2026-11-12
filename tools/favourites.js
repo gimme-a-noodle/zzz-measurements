@@ -73,7 +73,16 @@ if(typeof document!=='undefined')(() => {
   const DRAFT='zzz-favourites-v1',SAVED='zzz-favourite-boards-v1';
   let lang='en',cupSystem='uk',board=FavouriteBoard.empty(),selected='',undo=[],dragged='',previewUrl='';
   let savedBoards=[];
-  const t=(key,values={})=>Object.entries(values).reduce((s,[k,v])=>s.replaceAll('{'+k+'}',v),FAVOURITES_I18N[lang][key]);
+  // Korean particles follow the final sound of the word before them: 을/를, (으)로, 이/가, 은/는.
+  function koFinal(word){
+    const ch=[...String(word)].reverse().find(c=>/[가-힣0-9A-Za-z]/.test(c))||'';
+    if(/[가-힣]/.test(ch)){const f=(ch.charCodeAt(0)-0xAC00)%28;return {final:f>0,rieul:f===8};}
+    if(/[0-9]/.test(ch))return {final:'013678'.includes(ch),rieul:'178'.includes(ch)};
+    const u=ch.toUpperCase();return {final:'LMNR'.includes(u),rieul:'LR'.includes(u)};
+  }
+  const koParticles=s=>s.replace(/(\S+?)(을\(를\)|\(으\)로|이\(가\)|은\(는\))/g,(_,w,p)=>{const {final,rieul}=koFinal(w);
+    return w+({'을(를)':final?'을':'를','(으)로':final&&!rieul?'으로':'로','이(가)':final?'이':'가','은(는)':final?'은':'는'})[p];});
+  const t=(key,values={})=>{const s=Object.entries(values).reduce((s,[k,v])=>s.replaceAll('{'+k+'}',v),FAVOURITES_I18N[lang][key]);return lang==='ko'?koParticles(s):s;};
   const name=d=>lang==='en'?d.display:d['name_'+lang]||d.display;
   const status=text=>$('#favStatus').textContent=text;
   function store(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true;}catch(_){status(t('favStorageError'));return false;}}
@@ -131,7 +140,7 @@ if(typeof document!=='undefined')(() => {
       tier.append(label,members);dropZone(tier,i);container.append(tier);
     });
     const placed=new Set(board.tiers.flat()),q=$('#favSearch').value.trim().toLowerCase();
-    const pool=data.filter(d=>!placed.has(d.slug)),visible=pool.filter(d=>[d.display,d.name_ja,d.name_zh,d.slug].some(s=>s?.toLowerCase().includes(q))).sort((a,b)=>name(a).localeCompare(name(b),lang));
+    const pool=data.filter(d=>!placed.has(d.slug)),visible=pool.filter(d=>[d.display,d.name_ja,d.name_zh,d.name_ko,d.slug].some(s=>s?.toLowerCase().includes(q))).sort((a,b)=>name(a).localeCompare(name(b),lang));
     const poolEl=$('#favPoolItems');poolEl.replaceChildren();visible.forEach(d=>poolEl.append(tile(d)));
     if(!visible.length){const empty=document.createElement('p');empty.className='fav-empty';empty.textContent=t('favNoResults');poolEl.append(empty);}
     $('#favPoolCount').textContent=pool.length;$('#favCount').textContent=t('favCount',{n:placed.size,total:data.length});

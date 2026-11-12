@@ -230,9 +230,11 @@ for d in recs:
     if loc:
         d['name_ja'] = loc['ja']
         d['name_zh'] = loc['zh']
+        d['name_ko'] = loc['ko']
         if d.get('skin'):
             d['skin']['name_ja'] = loc['ja']
             d['skin']['name_zh'] = loc['zh']
+            d['skin']['name_ko'] = loc['ko']
 
 # search aliases: roster key, wiki page title, display name and outfit labels
 for d in recs:

@@ -2,181 +2,217 @@
   "Anomaly": {
     "en": "Anomaly",
     "ja": "異常",
-    "zh": "异常"
+    "zh": "异常",
+    "ko": "이상"
   },
   "Armorer": {
     "en": "Armorer",
     "ja": "鋭御",
-    "zh": "锋御"
+    "zh": "锋御",
+    "ko": "단조"
   },
   "Attack": {
     "en": "Attack",
     "ja": "強攻",
-    "zh": "强攻"
+    "zh": "强攻",
+    "ko": "강공"
   },
   "Defense": {
     "en": "Defense",
     "ja": "防護",
-    "zh": "防护"
+    "zh": "防护",
+    "ko": "방어"
   },
   "Electric": {
     "en": "Electric",
     "ja": "電気属性",
-    "zh": "电属性"
+    "zh": "电属性",
+    "ko": "전기 속성"
   },
   "Ether": {
     "en": "Ether",
     "ja": "エーテル",
-    "zh": "以太"
+    "zh": "以太",
+    "ko": "에테르"
   },
   "Fire": {
     "en": "Fire",
     "ja": "炎属性",
-    "zh": "火属性"
+    "zh": "火属性",
+    "ko": "불 속성"
   },
   "Ice": {
     "en": "Ice",
     "ja": "氷属性",
-    "zh": "冰属性"
+    "zh": "冰属性",
+    "ko": "얼음 속성"
   },
   "Lumiflux": {
     "en": "Lumiflux",
     "ja": "流明",
-    "zh": "流明"
+    "zh": "流明",
+    "ko": "루멘"
   },
   "Physical": {
     "en": "Physical",
     "ja": "物理",
-    "zh": "物理"
+    "zh": "物理",
+    "ko": "물리"
   },
   "Rupture": {
     "en": "Rupture",
     "ja": "命破",
-    "zh": "命破"
+    "zh": "命破",
+    "ko": "명파"
   },
   "Stun": {
     "en": "Stun",
     "ja": "撃破",
-    "zh": "击破"
+    "zh": "击破",
+    "ko": "격파"
   },
   "Support": {
     "en": "Support",
     "ja": "支援",
-    "zh": "支援"
+    "zh": "支援",
+    "ko": "지원"
   },
   "Wind": {
     "en": "Wind",
     "ja": "風",
-    "zh": "风"
+    "zh": "风",
+    "ko": "바람 속성"
   },
   "Airspace Patrol Department": {
     "en": "Airspace Patrol Department",
     "ja": "空域巡警局",
-    "zh": "空域巡戍局"
+    "zh": "空域巡戍局",
+    "ko": "공역순찰국"
   },
   "Angels of Delusion": {
     "en": "Angels of Delusion",
     "ja": "「妄想エンジェル」",
-    "zh": "「妄想天使」"
+    "zh": "「妄想天使」",
+    "ko": "AOD"
   },
   "Belobog Heavy Industries": {
     "en": "Belobog Heavy Industries",
     "ja": "白祇重工",
-    "zh": "白祇重工"
+    "zh": "白祇重工",
+    "ko": "벨로보그 중공업"
   },
   "Covenant of Dayat": {
     "en": "Covenant of Dayat",
     "ja": "ダアト結社",
-    "zh": "达识结社"
+    "zh": "达识结社",
+    "ko": "다야트 결사단"
   },
   "Criminal Investigation Special Response Team": {
     "en": "Criminal Investigation Special Response Team",
     "ja": "特務捜査班",
-    "zh": "刑侦特勤组"
+    "zh": "刑侦特勤组",
+    "ko": "형사특수팀"
   },
   "Cunning Hares": {
     "en": "Cunning Hares",
     "ja": "邪兎屋",
-    "zh": "狡兔屋"
+    "zh": "狡兔屋",
+    "ko": "교활한 토끼굴"
   },
   "External Strategy Department": {
     "en": "External Strategy Department",
     "ja": "外務計策局",
-    "zh": "外务筹策局"
+    "zh": "外务筹策局",
+    "ko": "외무전략국"
   },
   "Flint Workshop": {
     "en": "Flint Workshop",
     "ja": "フリンツ工房",
-    "zh": "弗林特工坊"
+    "zh": "弗林特工坊",
+    "ko": "플린트 공방"
   },
   "Hollow Special Operations Section 6": {
     "en": "Hollow Special Operations Section 6",
     "ja": "対ホロウ特別行動部第六課",
-    "zh": "对空洞特别行动部第六课"
+    "zh": "对空洞特别行动部第六课",
+    "ko": "대공동 특별행동부 제6과"
   },
   "Krampus Compliance Authority": {
     "en": "Krampus Compliance Authority",
     "ja": "「クランプスの黒枝」",
-    "zh": "「坎卜斯黑枝」"
+    "zh": "「坎卜斯黑枝」",
+    "ko": "크람푸스의 검은 가지"
   },
   "Metropolitan Order Division": {
     "en": "Metropolitan Order Division",
     "ja": "都市秩序部",
-    "zh": "都市秩序部"
+    "zh": "都市秩序部",
+    "ko": "도시 관리부"
   },
   "Mockingbird": {
     "en": "Mockingbird",
     "ja": "「モッキンバード」",
-    "zh": "「反舌鸟」"
+    "zh": "「反舌鸟」",
+    "ko": "모킹버드"
   },
   "Obol Squad": {
     "en": "Obol Squad",
     "ja": "オボルス小隊",
-    "zh": "奥波勒斯小队"
+    "zh": "奥波勒斯小队",
+    "ko": "오볼로스 소대"
   },
   "Phaethon": {
     "en": "Phaethon",
     "ja": "「パエトーン」",
-    "zh": "「法厄同」"
+    "zh": "「法厄同」",
+    "ko": "파에톤"
   },
   "Sons of Calydon": {
     "en": "Sons of Calydon",
     "ja": "カリュドーンの子",
-    "zh": "卡吕冬之子"
+    "zh": "卡吕冬之子",
+    "ko": "칼리돈의 자손"
   },
   "Spook Shack": {
     "en": "Spook Shack",
     "ja": "怪啖屋",
-    "zh": "怪啖屋"
+    "zh": "怪啖屋",
+    "ko": "괴담방"
   },
   "Stars of Lyra": {
     "en": "Stars of Lyra",
     "ja": "スターズ・オブ・リラ",
-    "zh": "天琴座"
+    "zh": "天琴座",
+    "ko": "스타즈 오브 리라"
   },
   "Victoria Housekeeping Co.": {
     "en": "Victoria Housekeeping Co.",
     "ja": "ヴィクトリア家政",
-    "zh": "维多利亚家政"
+    "zh": "维多利亚家政",
+    "ko": "빅토리아 하우스키핑"
   },
   "Yunkui Summit": {
     "en": "Yunkui Summit",
     "ja": "雲嶽山",
-    "zh": "云岿山"
+    "zh": "云岿山",
+    "ko": "운규산"
   },
   "Auric Ink": {
     "en": "Auric Ink",
     "ja": "玄墨",
-    "zh": "玄墨"
+    "zh": "玄墨",
+    "ko": "현묵"
   },
   "Frost": {
     "en": "Frost",
     "ja": "霜烈",
-    "zh": "烈霜"
+    "zh": "烈霜",
+    "ko": "서리 속성"
   },
   "Honed Edge": {
     "en": "Honed Edge",
     "ja": "凛刃",
-    "zh": "凛刃"
+    "zh": "凛刃",
+    "ko": "서슬"
   }
 }

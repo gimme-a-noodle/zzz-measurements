@@ -26,7 +26,7 @@ class ReferenceTests(unittest.TestCase):
             a=REF['agents'][d['slug']]
             for field in ['attribute','specialty','faction']:
                 if a[field]:
-                    for lang in ['en','ja','zh']:self.assertTrue(LABELS[a[field]].get(lang),(d['slug'],field,lang))
+                    for lang in ['en','ja','zh','ko']:self.assertTrue(LABELS[a[field]].get(lang),(d['slug'],field,lang))
             self.assertTrue(a['source'].startswith('https://zenless-zone-zero.fandom.com/wiki/'))
     def test_kafka_owner_measurements_and_artwork(self):
         from analysis_math import cup_size, cup_distribution

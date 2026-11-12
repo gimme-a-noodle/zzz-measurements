@@ -34,9 +34,9 @@ python3 tools/validate.py  --site-url https://<user>.github.io/<repo>/
 `pack_site.py` runs the pipeline and writes a complete `docs/`:
 
 1. `build_data.py` — CSV → `tools/data.json` (ratios, classes, percentiles, provenance)
-2. `describe.py` — generated profile text in English, Japanese and Simplified Chinese (cm + inches)
+2. `describe.py` — generated profile text in English, Japanese, Simplified Chinese and Korean (cm + inches)
 3. `build_html.py` — `index.html`, `tools.html` and `favourites.html`, localized data and JSON-LD
-4. `build_pages.py` — 51 character pages × 3 languages, 3 methodology/FAQ pages, dataset exports, offline page
+4. `build_pages.py` — 51 character pages × 4 languages, 4 methodology/FAQ pages, dataset exports, offline page
 5. crawler files, PWA manifest, service worker, link check
 
 Optional asset steps (already committed):
@@ -185,13 +185,13 @@ The separate **Tools** page (`tools.html`), linked from the page navigation, con
 
 `tools/analysis_math.py` and `tools/analysis.js` implement the same exploration math.
 `tools/explorer.js`, `tools/settings.js` and `tools/explorer.css` are inlined by `build_html.py`; the shared
-EN/JA/ZH copy in `tools/explorer_i18n.json` supplies both the interactive UI and static
+EN/JA/ZH/KO copy in `tools/explorer_i18n.json` supplies both the interactive UI and static
 methodology. The public measurement schema is unchanged. Old `#view=distribution`, `matches`,
 `game` and `sandbox` links redirect to the Tools page with their state intact.
 Tool section changes create browser-history entries; field edits replace the
 current entry. A shared sticky container keeps tool navigation above its controls.
 Navigation carries filters, comparison selections, units, theme and language between
-pages. The packed site contains 51 entries, 153 profiles and 744 files (about 143.0 MB).
+pages. The packed site contains 51 entries, 204 profiles and 798 files (about 145.9 MB).
 
 ## Measurement analysis
 
@@ -226,7 +226,7 @@ The view sources are `tools/measurement_tools.js` and `.css`, inlined by the
 HTML generator. Mathematics lives in the existing Python/JavaScript analysis
 helpers. `python3 tools/test_analysis.py` covers paired statistics, ratio and
 percentile parity, missing values, range boundaries and URL validation. All five
-views and the methodology are localized in English, Japanese and Chinese.
+views and the methodology are localized in English, Japanese, Chinese and Korean.
 
 ## Favourites
 
@@ -302,11 +302,11 @@ commands; the build and the live page both recalculate from that row.
 ## Languages
 
 The language switch in Settings changes the interface, character names and the
-figure-read/profile copy between English, Japanese and Simplified Chinese. Names are
+figure-read/profile copy between English, Japanese, Simplified Chinese and Korean. Names are
 the official localized names taken from the HoYoverse character pages (recorded in
 `tools/localized_names.json`), not literal translations. The static profiles also
-exist as crawlable pages at `/ja/characters/<slug>.html` and
-`/zh/characters/<slug>.html`, with matching localized methodology pages and
+exist as crawlable pages at `/ja/characters/<slug>.html`,
+`/zh/characters/<slug>.html` and `/ko/characters/<slug>.html`, with matching localized methodology pages and
 `hreflang` alternates. The source/export fields stay in English.
 
 ## Typography
@@ -327,6 +327,14 @@ Two notes:
   One as further fallbacks. Chinese display/body fallbacks use the Noto Sans SC
   variable and 900 subsets. This avoids tofu while keeping the ZZZ face wherever
   it has a glyph.
+- Hongmeng has no Hangul. Korean text uses **S-Core Dream 9 Black**
+  (에스코어 드림 9 Black), the face the Korean game client uses in the same role.
+  Its licence allows free redistribution but forbids modifying the file, so
+  `fonts/SCDream9.otf` is the unmodified official OTF (743 kB), limited to Hangul
+  by `unicode-range` and left out of the service-worker install cache, so only
+  Korean pages download it. `fonts.css` reproduces the client build's vertical
+  metrics with `ascent-override`/`descent-override`. `tools/fetch_ko_font.py`
+  refetches it and checks the pinned SHA-256; see `fonts/LICENSE-S-Core-Dream.txt`.
 
 Rebuild the fallback font subsets with `tools/update_cjk_fonts.py` (requires
 `fonttools[woff]` from `requirements.txt`). It subsets full OFL source files in memory

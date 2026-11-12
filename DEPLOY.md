@@ -1,7 +1,7 @@
 # Deploying ZZZ Female Measurements
 
-Everything the site needs lives in **`docs/`** — the roster and tools pages, 153 static
-character pages (51 agents × English/Japanese/Simplified Chinese), three
+Everything the site needs lives in **`docs/`** — the roster and tools pages, 204 static
+character pages (51 agents × English/Japanese/Simplified Chinese/Korean), four
 methodology/FAQ pages, the dataset exports, WebP artwork, bundled fonts, icons, the
 service worker and the crawler files. Nothing else in the repository is served.
 
@@ -12,7 +12,7 @@ docs/
   favourites.html          personal tier rankings and shareable JPG export
   methodology.html         method, classes, FAQ
   characters/*.html        51 English profiles
-  ja/, zh/                 localized profiles + methodology
+  ja/, zh/, ko/            localized profiles + methodology
   data/                    measurements.json · measurements.csv · schema.json
   offline.html             service-worker fallback
   sw.js                    versioned cache
@@ -20,13 +20,13 @@ docs/
   404.html                 absolute-base not-found page
   robots.txt sitemap.xml .nojekyll
   og.png favicon.* icon-*.png
-  fonts/                   22 woff2 + fonts.css + OFL/licence notes (local)
+  fonts/                   22 woff2 + 1 OTF + fonts.css + OFL/licence notes (local)
   originals/               77 source-original PNGs, loaded on demand
   images/                  50 sheet crops + measurement guide
   character_images/        55 portraits + 26 outfit renders + responsive thumbs/
 ```
 
-≈ **744 files / 143.0 MB** (the responsive thumb set adds storage but cuts transfer).
+≈ **798 files / 145.9 MB** (the responsive thumb set adds storage but cuts transfer).
 
 ## 1. Set the URL
 
@@ -132,7 +132,7 @@ search-console verification files (`google*.html`, `BingSiteAuth.xml`, `yandex_*
 * JSON-LD: `WebSite`, `WebPage`, `Dataset` (with `dateModified`, `distribution`,
   `measurementTechnique`, rights), `ItemList`, `ProfilePage` + `Person`,
   `BreadcrumbList`, `FAQPage`
-* 153 static profile pages (EN/JA/ZH) plus three methodology pages in the sitemap
+* 204 static profile pages (EN/JA/ZH/KO) plus four methodology pages in the sitemap
 * a `<noscript>` table and 51 pre-rendered cards, so crawlers and no-JS visitors get
   every measurement
 * local fonts, responsive `srcset` artwork (AVIF first, WebP fallback, 320/640 px),

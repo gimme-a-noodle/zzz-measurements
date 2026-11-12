@@ -128,12 +128,40 @@ PAGE = {
         'methodology': '方法与常见问题', 'data_updated': '数据更新', 'back': '返回图表',
         'shape': '轮廓', 'build_word': '体型', 'hand_pinned': '人工分类', 'language': '语言', 'roster_nav': '名单导航',
     },
+    'ko': {
+        'home': '← ZZZ 치수', 'top': '젠레스 존 제로 · <b>{n}</b>명',
+        'eyebrow': '젠레스 존 제로 · 치수', 'open': '차트에서 열기',
+        'dataset': '데이터셋', 'report': '오류 제보', 'measurements': '치수',
+        'caption': 'cm와 인치로 표시합니다. 브라 사이즈는 출처의 표기를 따릅니다.',
+        'proportions': '비율', 'percentiles': '전체 내 백분위',
+        'compare_basis': '비교 기준', 'raw_measurements': '실측값', 'height_adjusted': '키 대비',
+        'height_adjusted_note': '둘레 ÷ 키 × 100', 'smaller_value': '작은 값', 'larger_value': '큰 값',
+        'pct_note': '{n}명의 실측 cm 값에 대한 백분위입니다. 키는 정수리 기준입니다. 0 = 가장 작음, 100 = 가장 큼.',
+        'figure_read': '체형 해설', 'classes': '분류', 'outfits': '의상',
+        'provenance': '출처', 'portrait_source': '이미지 출처', 'updated': '데이터 갱신',
+        'similar': '비슷한 체형', 'previous': '이전', 'next': '다음',
+        'height': '키', 'bust': '가슴', 'underbust': '밑가슴', 'waist': '허리',
+        'hip': '엉덩이', 'thigh': '허벅지', 'bust_diff': '가슴 차이', 'bra': '브라 사이즈',
+        'no_thigh': '믿을 만한 측정값 없음', 'charted': '공식',
+        'waist_hip': '허리 / 엉덩이', 'waist_height': '허리 / 키', 'waist_thigh': '허리 / 허벅지',
+        'thigh_height': '허벅지 / 키', 'thigh_hip': '허벅지 / 엉덩이',
+        'bust_height': '가슴 / 키', 'hip_height': '엉덩이 / 키',
+        'official_portrait': '공식 초상', 'measured_outfit': '측정된 의상 · 자체 수치 있음',
+        'outfit_portrait': '의상 초상', 'art_only': '이미지만',
+        'stature_note': '키는 정수리 기준 약 {st}cm입니다. 공식 {cm}cm에는 귀가 포함되어 있습니다.',
+        'measured_note': '이 에이전트에게는 측정된 의상({outfit})이 있습니다. 이 페이지의 수치는 <b>기본 모델</b>이며, 의상 기록은 데이터셋에 따로 저장되어 있습니다.',
+        'chart_note': '차트 메모', 'source': '출처', 'source_repository': '소스 저장소',
+        'source_title': '젠레스 존 제로 · 여성 캐릭터 신체 치수',
+        'rights': '공식 이미지는 HoYoverse 공식 사이트와 ZZZ Fandom wiki에서 가져왔습니다. © HoYoverse(공정 이용). 자동 생성된 해설은 게임 내 설정이 아닙니다.',
+        'methodology': '산출 방법 및 FAQ', 'data_updated': '데이터 갱신', 'back': '차트로 돌아가기',
+        'shape': '실루엣', 'build_word': '체형', 'hand_pinned': '수동 분류', 'language': '언어', 'roster_nav': '명단 탐색',
+    },
 }
 
 
 for _lang, _strings in json.loads((ROOT / 'tools/explorer_i18n.json').read_text()).items():
     PAGE[_lang].update(_strings)
-    PAGE[_lang].update(dict(zip(['close','light','dark'],{'en':['Close','Light','Dark'],'ja':['閉じる','ライト','ダーク'],'zh':['关闭','浅色','深色']}[_lang])))
+    PAGE[_lang].update(dict(zip(['close','light','dark'],{'en':['Close','Light','Dark'],'ja':['閉じる','ライト','ダーク'],'zh':['关闭','浅色','深色'],'ko':['닫기','라이트','다크']}[_lang])))
 
 
 def esc(v):
@@ -162,6 +190,9 @@ CSS = (ROOT/'tools/visual_tools.css').read_text()+'''
 html[lang^="zh"]{--disp:'ZZZ Hongmeng','Anton','Noto Sans SC Display','Arial Narrow',Impact,sans-serif;
   --body:'ZZZ Hongmeng',Inter,'Noto Sans SC Display','Noto Sans SC',system-ui,-apple-system,sans-serif;
   --num:'Chakra Petch','ZZZ Hongmeng','Noto Sans SC Display','Noto Sans SC',ui-monospace,Menlo,monospace}
+html[lang^="ko"]{--disp:'ZZZ Hongmeng','S-Core Dream 9','Anton','Arial Narrow',Impact,sans-serif;
+  --body:'ZZZ Hongmeng','S-Core Dream 9',Inter,'Apple SD Gothic Neo','Malgun Gothic',system-ui,-apple-system,sans-serif;
+  --num:'Chakra Petch','ZZZ Hongmeng','S-Core Dream 9',ui-monospace,Menlo,monospace}
 *{box-sizing:border-box}
 body{margin:0;background:var(--ink);color:var(--concrete);font:14px/1.6 var(--body);
   -webkit-font-smoothing:antialiased}
@@ -276,6 +307,7 @@ def head(title, desc, canonical, og_image, extra_ld='', prefix='../', lang='en',
     <a href="{prefix}{path}" data-lang="en" class="{ 'on' if lang=='en' else ''}" onclick="try{{localStorage.setItem('zzz-lang','en')}}catch(e){{}}">EN</a>
     <a href="{prefix}ja/{path}" data-lang="ja" class="{ 'on' if lang=='ja' else ''}" onclick="try{{localStorage.setItem('zzz-lang','ja')}}catch(e){{}}">日本語</a>
     <a href="{prefix}zh/{path}" data-lang="zh" class="{ 'on' if lang=='zh' else ''}" onclick="try{{localStorage.setItem('zzz-lang','zh')}}catch(e){{}}">中文</a>
+    <a href="{prefix}ko/{path}" data-lang="ko" class="{ 'on' if lang=='ko' else ''}" onclick="try{{localStorage.setItem('zzz-lang','ko')}}catch(e){{}}">한국어</a>
   </nav>
   <span>{p['top'].format(n=N)}</span>
 </header>
@@ -354,12 +386,15 @@ def character_page(d, prev_d, next_d, lang='en'):
         ('en', SITE + f"characters/{d['slug']}.html"),
         ('ja', SITE + f"ja/characters/{d['slug']}.html"),
         ('zh-Hans', SITE + f"zh/characters/{d['slug']}.html"),
+        ('ko', SITE + f"ko/characters/{d['slug']}.html"),
         ('x-default', SITE + f"characters/{d['slug']}.html"),
     ]
     if lang == 'en':
         title = f"{d['display']} measurements — height, bust, waist, hips | ZZZ"
     elif lang == 'ja':
         title = f"{nm}の寸法 — 身長・バスト・ウエスト・ヒップ | ZZZ"
+    elif lang == 'ko':
+        title = f"{nm} 신체 치수 — 키, 가슴, 허리, 엉덩이 | ZZZ"
     else:
         title = f"{nm}的三围 — 身高、胸围、腰围、臀围 | ZZZ"
     desc = profile_summary(d, lang)
@@ -374,7 +409,7 @@ def character_page(d, prev_d, next_d, lang='en'):
              "mainEntity": {"@id": canonical + "#person"},
              "about": {"@type": "VideoGame", "name": "Zenless Zone Zero"}},
             {"@type": "Person", "@id": canonical + "#person", "name": nm,
-             "alternateName": [d['display'], d.get('name_ja'), d.get('name_zh')],
+             "alternateName": [d['display'], d.get('name_ja'), d.get('name_zh'), d.get('name_ko')],
              "description": profile_cm, "image": og,
              "additionalProperty": [
                  {"@type": "PropertyValue", "name": label, "value": value, "unitText": "cm"}
@@ -508,7 +543,7 @@ def character_page(d, prev_d, next_d, lang='en'):
 
   <h2>{esc(p['figure_read'])}</h2>
   <div class="card"><p>{esc(profile_cm)}</p>
-    <p class="small" style="margin-top:10px">{esc(p['classes'])}: {esc(p['waist'])} {esc(tags['waist'])} · {esc(p['hip'])} {esc(tags['hips'])} · {esc(p['thigh'])} {esc(tags['thighs'])}{(' · ' + p['hand_pinned']) if d['thigh_pin'] else ''} · {esc(p['shape'])} {esc(tags['shape'])} · {esc(p['build_word'])} {esc(tags['balance'])}{'。' if lang != 'en' else '.'}</p>
+    <p class="small" style="margin-top:10px">{esc(p['classes'])}: {esc(p['waist'])} {esc(tags['waist'])} · {esc(p['hip'])} {esc(tags['hips'])} · {esc(p['thigh'])} {esc(tags['thighs'])}{(' · ' + p['hand_pinned']) if d['thigh_pin'] else ''} · {esc(p['shape'])} {esc(tags['shape'])} · {esc(p['build_word'])} {esc(tags['balance'])}{'.' if lang in ('en', 'ko') else '。'}</p>
     {chart_note}
   </div>
 
@@ -613,6 +648,33 @@ METHOD = {
    ('数据可以复用吗？', '测量数据整理自 modelmetrics.net，角色立绘©HoYoverse，经由 ZZZ Fandom wiki 以合理使用方式展示。请链接回来源并遵守相关权利。'),
   ],
  },
+ 'ko': {
+  'title': '산출 방법, 분류, FAQ — ZZZ 여성 캐릭터 신체 치수',
+  'desc': '젠레스 존 제로 캐릭터 치수를 어떻게 쟀는지, 귀가 포함된 공식 키를 어떻게 다루는지, 실루엣 분류와 백분위가 무엇을 뜻하는지 정리했습니다.',
+  'intro': '이 차트가 무엇을 재고 어디까지가 추정인지, 각 분류와 백분위를 어떻게 계산하는지 최대한 솔직하게 설명합니다.',
+  'sections': [
+   ('키', '공식 키는 공식 표기를 따르며, 귀나 신발, 액세서리가 포함될 수 있습니다. 귀 같은 메모가 있으면 정수리 기준 높이를 「키」로 쓰고, 공식 수치는 메모로 남깁니다(호시미 미야비: 공식 170cm / 표시 152.1cm). 내보낸 데이터에서는 <code>stature_cm</code>가 비교용 값입니다.'),
+   ('둘레', '가슴, 밑가슴, 허리, 엉덩이, 허벅지는 공식 3D 모델을 따라 감아서 잰 값입니다. 옷이나 갑옷, 빠진 형상 때문에 일부는 추정치가 되며, 출처의 메모는 원문 그대로 남겨 둡니다.'),
+   (PAGE['ko']['compare_basis'], f"비교 화면에서 「{PAGE['ko']['raw_measurements']}」과 「{PAGE['ko']['height_adjusted']}」를 전환할 수 있습니다. 키 대비 값은 가슴, 밑가슴, 허리, 엉덩이, 허벅지 둘레가 키에서 차지하는 비율이며, <code>{PAGE['ko']['height_adjusted_note']}</code>로 계산합니다. 분모는 <code>stature_cm</code>이고, 호시미 미야비는 정수리 높이 152.1cm를 씁니다. 소수점 한 자리까지 표시하며, 표시된 값이 같으면 함께 강조합니다. 허리는 {PAGE['ko']['smaller_value']}, 엉덩이와 허벅지는 {PAGE['ko']['larger_value']}을 강조하고, 측정값이 없는 항목은 비교에서 뺍니다. 키, 브라 사이즈, 분류 값은 바뀌지 않습니다. 순위, 필터, 백분위, 시상대는 기존 계산을 그대로 쓰며, 측정된 의상 기록도 따로 다룹니다."),
+   ('기본 모델과 의상', '기본 모델이 기준입니다. 예외는 제인 도로, 측정된 「Nocturne of Light」 의상을 정식 값으로 씁니다. 측정된 다른 의상은 자체 수치와 차이를 가진 별도 기록이며, 이미지만 있는 의상은 측정하지 않으므로 수치, 필터, 순위에 영향을 주지 않습니다.'),
+   ('브라 사이즈', '컵 구간은 출처의 UK 컵 표기(A-B, C-D, DD-E, F-G, GG+)를 따릅니다. UK / US / EU 표기는 비교용으로 출처에서 옮겨 온 것이며, 착용 사이즈 추천이 아닙니다.'),
+   ('분류', '허리, 엉덩이, 허벅지 분류는 실측 cm 기준으로 전체를 3등분한 것입니다. 체형(Build)은 가슴과 엉덩이의 백분위를 비교합니다. 실루엣은 세 둘레를 모두 씁니다. 모래시계형은 가슴/허리와 엉덩이/허리가 모두 1.45 이상이고 가슴과 엉덩이의 차이가 15% 이내인 경우, 일자형은 굴곡이 1.30 미만이거나 가슴과 엉덩이의 차이가 25%를 넘는 경우이며, 나머지는 균형형입니다. 13명은 눈으로 보고 굵은 편으로 수동 분류했으며, 그렇게 표시합니다.'),
+   ('백분위', '막대는 실측 cm 값의 전체 내 백분위이며, 키는 정수리 기준입니다. 0이 가장 작은 값, 50이 중간, 100이 가장 큰 값입니다.'),
+   ('수정', '모든 캐릭터 페이지에 미리 채워진 「오류 제보」 링크가 있습니다. 수정 내역은 변경 기록에 남기며, 데이터셋에는 스키마 버전과 갱신 날짜가 들어 있습니다.'),
+  ],
+  'data_heading': '데이터와 내보내기',
+  'data_lead': '대화형 차트와 정적 페이지는 같은 수치를 씁니다. 내려받는 파일은 스키마 v{schema}, 갱신일 {date} 기준입니다.',
+  'json': 'JSON 데이터셋', 'csv': 'CSV 내보내기', 'schema': 'JSON 스키마', 'back': '차트로 돌아가기',
+  'faq': [
+   ('수치는 어디서 왔나요?', '공식 키가 있으면 공식 값을 씁니다. 나머지 둘레는 공식 3D 모델을 따라 잰 값이므로, 게임 내 수치가 아니라 추정치로 봐 주세요.'),
+   ('호시미 미야비가 170cm와 152.1cm로 나오는 이유는?', '공식 170cm에는 귀가 포함되어 있습니다. 화면에서는 정수리 기준 약 152.1cm를 키로 쓰고, 공식 수치는 메모와 내보낸 데이터에 남겨 둡니다.'),
+   ('카드의 수치는 기본 모델인가요?', '기본 모델이 기준이며, 제인 도만 측정된 「Nocturne of Light」 의상을 유일한 기록으로 씁니다. 측정된 다른 의상은 자체 수치와 차이를 가진 채 따로 저장되므로, 카드나 순위에서 두 의상의 수치가 섞이지 않습니다.'),
+   ('실루엣 분류는 무슨 뜻인가요?', '가슴, 허리, 엉덩이 세 둘레를 씁니다. 모래시계형은 가슴/허리와 엉덩이/허리가 모두 1.45 이상이고 가슴과 엉덩이의 차이가 15% 이내인 경우, 일자형은 굴곡이 1.30 미만이거나 차이가 25%를 넘는 경우이며, 나머지는 균형형입니다. 체형(Build)은 가슴과 엉덩이의 백분위를 비교합니다. 허리, 엉덩이, 허벅지 분류는 각 둘레를 전체에서 3등분한 것입니다.'),
+   ('수동 분류란 무엇인가요?', '둘레 수치 하나만으로는 실제 느낌이 잘 드러나지 않는 캐릭터가 있습니다. 그중 13명은 눈으로 보고 굵은 편으로 분류했으며, 상세 화면에 「수동 분류」로 표시합니다.'),
+   ('컵 구간은 어떻게 계산하나요?', '출처의 UK 컵 표기(A-B, C-D, DD-E, F-G, GG+)를 따릅니다. 착용 사이즈 추천이 아니라 출처의 사이즈 표기입니다.'),
+   ('데이터를 다시 써도 되나요?', '치수는 modelmetrics.net에서 모았고, 캐릭터 이미지는 © HoYoverse이며 ZZZ Fandom wiki를 통해 공정 이용으로 싣고 있습니다. 출처 링크를 남기고 해당 권리를 존중해 주세요.'),
+  ],
+ },
 }
 
 
@@ -636,9 +698,9 @@ FAQ = [
 
 for _lang in PAGE:
     _title, _body = METHOD[_lang]['sections'][4]
-    _reference = {'en': 'UK cup-order reference', 'ja': 'UKカップ順の出典', 'zh': 'UK罩杯顺序来源'}[_lang]
+    _reference = {'en': 'UK cup-order reference', 'ja': 'UKカップ順の出典', 'zh': 'UK罩杯顺序来源', 'ko': 'UK 컵 순서 출처'}[_lang]
     METHOD[_lang]['sections'][4] = (_title, _body + ' ' + esc(PAGE[_lang]['helpCup']) +
-        f' <a href="https://katherinehamilton.com/pages/international-bra-size-chart" rel="noopener">{_reference}</a>' + ('.' if _lang == 'en' else '。'))
+        f' <a href="https://katherinehamilton.com/pages/international-bra-size-chart" rel="noopener">{_reference}</a>' + ('.' if _lang in ('en', 'ko') else '。'))
     METHOD[_lang]['intro'] += ' ' + PAGE[_lang]['additionalDataNote']
     for _i in (0, 6):
         _q, _a = METHOD[_lang]['faq'][_i]
@@ -662,6 +724,7 @@ def methodology_page(lang='en'):
         ('en', SITE + 'methodology.html'),
         ('ja', SITE + 'ja/methodology.html'),
         ('zh-Hans', SITE + 'zh/methodology.html'),
+        ('ko', SITE + 'ko/methodology.html'),
         ('x-default', SITE + 'methodology.html'),
     ]
     faq_ld = {
@@ -743,14 +806,16 @@ def export_json():
             "measurement_source": d.get("measurement_source", "modelmetrics.net"),
             "estimated_cup_systems": d.get("estimated_cup_systems", []),
             "sheet_available": d.get("sheet_available", True),
-            "display_ja": d.get('name_ja'), "display_zh": d.get('name_zh'),
+            "display_ja": d.get('name_ja'), "display_zh": d.get('name_zh'), "display_ko": d.get('name_ko'),
             "profile": SITE + f"characters/{d['slug']}.html",
             "profile_ja": SITE + f"ja/characters/{d['slug']}.html",
             "profile_zh": SITE + f"zh/characters/{d['slug']}.html",
+            "profile_ko": SITE + f"ko/characters/{d['slug']}.html",
             "profile_text": {
                 "en": {"cm": d['desc_cm'], "in": d['desc_in'], "read": d['read']},
                 "ja": {"cm": d.get('desc_ja_cm'), "in": d.get('desc_ja_in'), "read": d.get('read_ja')},
                 "zh": {"cm": d.get('desc_zh_cm'), "in": d.get('desc_zh_in'), "read": d.get('read_zh')},
+                "ko": {"cm": d.get('desc_ko_cm'), "in": d.get('desc_ko_in'), "read": d.get('read_ko')},
             },
             "measured_outfit": None,
             "art_only_outfits": [{"label": o['label'], "type": o['type']} for o in d['outfits']],
@@ -839,10 +904,11 @@ def schema_doc():
                         "estimated_cup_systems": {"type": "array", "items": {"enum": ["uk", "us", "eu"]}, "uniqueItems": True},
                         "sheet_available": {"type": "boolean"},
                         "source_page": {"type": ["string", "null"]},
-                        "display_ja": {"type": ["string", "null"]}, "display_zh": {"type": ["string", "null"]},
+                        "display_ja": {"type": ["string", "null"]}, "display_zh": {"type": ["string", "null"]}, "display_ko": {"type": ["string", "null"]},
                         "profile": {"type": "string", "format": "uri"},
                         "profile_ja": {"type": "string", "format": "uri"},
                         "profile_zh": {"type": "string", "format": "uri"},
+                        "profile_ko": {"type": "string", "format": "uri"},
                         "profile_text": {"type": "object"},
                         "measured_outfit": {"type": ["object", "null"]},
                         "art_only_outfits": {"type": "array"},
@@ -886,7 +952,7 @@ def main():
     a = ap.parse_args()
     SITE = a.site_url if a.site_url.endswith('/') else a.site_url + '/'
     out = Path(a.out)
-    for lang in ('en', 'ja', 'zh'):
+    for lang in ('en', 'ja', 'zh', 'ko'):
         page_dir = out / 'characters' if lang == 'en' else out / lang / 'characters'
         page_dir.mkdir(parents=True, exist_ok=True)
         (out / 'data').mkdir(parents=True, exist_ok=True)
@@ -906,7 +972,7 @@ def main():
     export_csv(out / 'data' / 'measurements.csv')
     (out / 'data' / 'schema.json').write_text(
         json.dumps(schema_doc(), indent=1, ensure_ascii=False) + '\n')
-    print(f'pages: {N * 3} character pages + 3 methodology + offline + 3 data files -> {out}')
+    print(f'pages: {N * 4} character pages + 4 methodology + offline + 3 data files -> {out}')
 
 
 if __name__ == '__main__':

@@ -103,6 +103,7 @@ def values(d, unit='cm', lang='en'):
         'en': ('bust', 'waist', 'hips', 'uk', 'bust', 'waist', 'hip'),
         'ja': ('バスト', 'ウエスト', 'ヒップ', 'UK', 'バスト', 'ウエスト', 'ヒップ'),
         'zh': ('胸围', '腰围', '臀围', 'UK', '胸围', '腰围', '臀围'),
+        'ko': ('가슴', '허리', '엉덩이', 'UK', '가슴', '허리', '엉덩이'),
     }[lang]
     unit_suffix = 'cm' if unit == 'cm' else 'in'
     note = f'<div class="note">{esc(d["notes"])}</div>' if d['notes'] else ''

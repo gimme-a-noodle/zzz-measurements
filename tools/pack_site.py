@@ -186,7 +186,7 @@ self.addEventListener('fetch', event => {{
 
 def sitemap(site):
     pages = ['', 'tools.html', 'favourites.html', 'methodology.html'] + [f"characters/{d['slug']}.html" for d in DATA]
-    for lang in ('ja', 'zh'):
+    for lang in ('ja', 'zh', 'ko'):
         pages += [f'{lang}/methodology.html'] + [f"{lang}/characters/{d['slug']}.html" for d in DATA]
     items = '\n'.join(
         f'  <url><loc>{site}{p}</loc><lastmod>{META["data_updated"]}</lastmod>'
@@ -303,7 +303,7 @@ def main():
     if pages.returncode:
         sys.exit(f'build_pages.py failed:\n{pages.stdout}\n{pages.stderr}')
     print('  ' + [l for l in pages.stdout.strip().splitlines() if l][-1])
-    files += sum(1 for _ in (out / 'characters').glob('*.html')) + sum(1 for _ in (out / 'ja' / 'characters').glob('*.html')) + sum(1 for _ in (out / 'zh' / 'characters').glob('*.html')) + 8
+    files += sum(1 for _ in (out / 'characters').glob('*.html')) + sum(1 for lang in ('ja', 'zh', 'ko') for _ in (out / lang / 'characters').glob('*.html')) + 9
 
     # service worker + crawler files
     (out / 'sw.js').write_text(service_worker(html, site, tools_html, favourites_html))

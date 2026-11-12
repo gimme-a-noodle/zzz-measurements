@@ -113,17 +113,17 @@ def check_data(out):
                 err(f'{rec["display"]}: Build disagrees with bust/hip percentiles')
             # Check the actual generated prose, including both unit variants.
             phrases = {
-                'top': ('the bust ranks higher', 'バストがヒップより上位', '胸围在全榜中的排名高于臀围'),
-                'bottom': ('the hips rank higher', 'ヒップがバストより上位', '臀围在全榜中的排名高于胸围'),
-                'even': ('bust and hip percentile ranks are close', '順位は近い位置', '胸围与臀围在全榜中的排名接近'),
+                'top': ('the bust ranks higher', 'バストがヒップより上位', '胸围在全榜中的排名高于臀围', '가슴이 엉덩이보다 위'),
+                'bottom': ('the hips rank higher', 'ヒップがバストより上位', '臀围在全榜中的排名高于胸围', '엉덩이가 가슴보다 위'),
+                'even': ('bust and hip percentile ranks are close', '順位は近い位置', '胸围与臀围在全榜中的排名接近', '전체 순위가 비슷'),
             }[balance]
-            for lang, phrase in zip(('en', 'ja', 'zh'), phrases):
+            for lang, phrase in zip(('en', 'ja', 'zh', 'ko'), phrases):
                 for unit in ('cm', 'in'):
                     key = f'desc_{unit}' if lang == 'en' else f'desc_{lang}_{unit}'
                     prose = rec.get(key, '')
                     if phrase not in prose:
                         err(f'{rec["display"]}: {key} disagrees with Build')
-                    if re.search(r'ありますです|ですです|\.\.|。。', prose):
+                    if re.search(r'ありますです|ですです|입니다입니다|\.\.|。。', prose):
                         err(f'{rec["display"]}: malformed punctuation/grammar in {key}')
         if d.get('notes') and ('<' in d['notes'] or '>' in d['notes']):
             warn(f'{d["display"]}: note contains angle brackets')
@@ -190,7 +190,7 @@ def check_assets(out):
                 err(f'{d["display"]}: missing outfit art {it["file"]}')
             if it.get('avif') and not (ROOT / 'character_images' / it['avif']).exists():
                 err(f'{d["display"]}: missing outfit AVIF {it["avif"]}')
-        for lang in ('en', 'ja', 'zh'):
+        for lang in ('en', 'ja', 'zh', 'ko'):
             page = (out / 'characters' if lang == 'en' else out / lang / 'characters') / f"{d['slug']}.html"
             if not page.exists():
                 err(f'missing {lang} character page {page.relative_to(out)}')
@@ -219,7 +219,7 @@ def check_assets(out):
     # exports & crawler files
     for rel in ('index.html', 'tools.html', 'favourites.html', 'methodology.html', 'offline.html', 'sw.js', '404.html',
                 'robots.txt', 'sitemap.xml', 'manifest.webmanifest', '.nojekyll',
-                'ja/methodology.html', 'zh/methodology.html',
+                'ja/methodology.html', 'zh/methodology.html', 'ko/methodology.html',
                 'data/measurements.json', 'data/measurements.csv', 'data/schema.json'):
         if not (out / rel).exists():
             err(f'missing packed file {rel}')
@@ -238,6 +238,22 @@ def check_assets(out):
                 json.loads((out / rel).read_text())
             except json.JSONDecodeError as e:
                 err(f'{rel} invalid: {e}')
+    # The Korean face must ship byte for byte as S-Core distributes it.
+    from fetch_ko_font import MEMBER, SHA256
+    import hashlib
+    ko_font = out / 'fonts' / MEMBER
+    if not ko_font.exists() or hashlib.sha256(ko_font.read_bytes()).hexdigest() != SHA256:
+        err(f'fonts/{MEMBER} is missing or differs from the official S-Core file')
+    else:
+        from fontTools.ttLib import TTFont
+        cmap = TTFont(ko_font).getBestCmap()
+        used = {ch for page in (out / 'ko').rglob('*.html') for ch in page.read_text()
+                if '가' <= ch <= '힣'}
+        missing = sorted(ch for ch in used if ord(ch) not in cmap)
+        if not used:
+            err('ko pages contain no Hangul')
+        if missing:
+            err(f'fonts/{MEMBER} lacks Hangul used on ko pages: {"".join(missing[:20])}')
 
 
 # ---------------------------------------------------------------- HTML
@@ -325,14 +341,14 @@ def check_html(out, site):
             card = re.search(r'<article class="card" data-name="' + re.escape(htmllib.escape(d['name'], quote=True)) + r'">(.*?)</article>', idx, re.S)
             if not card or f"/{d['official']}.webp" not in card[1] or d['outfit'] not in card[1]:
                 err(f'index.html: canonical outfit missing from {d["display"]} card')
-    # All marked strings, including footer controls, need all three translations.
+    # All marked strings, including footer controls, need all four translations.
     i18n = re.search(r'const I18N = \{(.*?)\n\};', idx, re.S)
     if i18n:
-        blocks = re.split(r'\n  (?:en|ja|zh): \{', i18n[1])[1:]
-        if len(blocks) != 3:
-            err('index.html: expected three I18N language blocks')
+        blocks = re.split(r'\n  (?:en|ja|zh|ko): \{', i18n[1])[1:]
+        if len(blocks) != 4:
+            err('index.html: expected four I18N language blocks')
         keys = set(re.findall(r'data-i18n="([^"]+)"', idx + tools))
-        for lang, block in zip(('en', 'ja', 'zh'), blocks):
+        for lang, block in zip(('en', 'ja', 'zh', 'ko'), blocks):
             present = set(re.findall(r'\b(\w+):\s*[\'\"]', block))
             if keys - present:
                 err(f'index.html ({lang}): missing translations {sorted(keys - present)}')

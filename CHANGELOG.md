@@ -2,6 +2,22 @@
 
 ## Unreleased — audit implementation
 
+### Korean locale (2026-11-12)
+
+- Add Korean (`ko`) alongside EN/JA/ZH: interactive UI, Tools, Favourites,
+  `/ko/characters/<slug>.html` profiles, `/ko/methodology.html`, `hreflang`,
+  sitemap, JSON-LD and dataset exports (`display_ko`, `profile_ko`, `ko` text).
+- Use the official Korean names from the ko-kr HoYoverse character pages, with
+  `source_ko` in `tools/localized_names.json`, and official in-game terms for
+  attributes, specialties and factions. Eldreda Sunbringer uses 엘드레다, her
+  name in the Korean client's dialogue.
+- Generate Korean profile prose natively in `describe.py`, choosing particles
+  (은/는, 을/를, (으)로) from the final sound of each name; the Favourites page
+  resolves particles around dynamic names and tiers the same way.
+- Ship S-Core Dream 9 Black, the Korean client's UI face, as the unmodified
+  official OTF for Hangul only. The validator checks its SHA-256 and that it
+  covers every Hangul syllable on the Korean pages.
+
 ### Estimated UK labels in charts (2026-11-02)
 
 - Parse approved approximate UK labels for cup ordering, filters, distributions

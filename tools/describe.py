@@ -252,10 +252,62 @@ TAG_ZH = {
 }
 FRAME_JA = {'Petite': '小柄な体格', 'Mid': '中背', 'Tall': '高身長'}
 FRAME_ZH = {'Petite': '个子娇小', 'Mid': '中等身高', 'Tall': '身材高挑'}
+NOTE_KO = {
+    'Torso measurements approximated due to clothing and a lack of data on rabbit thiren physiology':
+        '복장 때문에 몸통 치수는 추정치이며, 토끼 시리안의 체형 자료가 적습니다',
+    'Chest approximated due to clothing': '복장 때문에 가슴둘레는 추정치입니다',
+    'Hip approximated, thigh impossible to measure': '엉덩이둘레는 추정치이고, 허벅지는 측정할 수 없습니다',
+    'Waist and hip approximated': '허리둘레와 엉덩이둘레는 추정치입니다',
+    'Hip approximated, clothing too baggy for accurate reading':
+        '옷이 헐렁해서 엉덩이둘레는 추정치입니다',
+    'Height includes ears': '키에 귀가 포함되어 있습니다',
+    'SAnby used for measurements, more visible geometry available':
+        '형태 정보가 더 많은 SAnby 모델로 측정했습니다',
+    'Chest approximated due to armor': '갑옷 때문에 가슴둘레는 추정치입니다',
+    'Measurements use the Nocturne of Light outfit; standard-model values are not used.':
+        '「Nocturne of Light」 의상으로 측정했으며, 기본 모델 수치는 쓰지 않습니다',
+    'TBC': '미확정',
+    "Project estimate based on the owner's assumptions and other sources; not from modelmetrics.net. Height including horns is 193.37 cm; comparisons use 180.37 cm excluding horns. UK 23HH is the supplied source size. US and EU sizes are estimates only: the nonstandard UK band prevents exact standard conversion, and the EU estimate rounds the theoretical band upward.":
+        '사이트 운영자의 가정과 다른 자료를 바탕으로 낸 자체 추정치이며, modelmetrics.net의 데이터가 아닙니다. 뿔을 포함한 키는 193.37cm이고, 비교에는 뿔을 뺀 180.37cm를 씁니다. UK 23HH는 출처에 나온 사이즈입니다. 밑가슴 값이 규격을 벗어나 US·EU로 정확히 환산할 수 없으므로 둘 다 추정치이며, EU는 계산상의 밑가슴 값을 올림했습니다',
+    "Owner-calculated measurements with AI assistance using a 3D model provided by hiragara; not from modelmetrics.net. Height is 174.1 cm after subtracting 7.0 cm of footwear from the model's 181.1 cm. Estimated bra sizes: UK ≈23GG / US ≈23J / EU ≈48L; matched to Grace and Rina using this dataset's sizing convention rather than standard retail conversions.":
+        '사이트 운영자가 AI의 도움을 받아 hiragara가 제공한 3D 모델로 계산한 치수이며, modelmetrics.net의 데이터가 아닙니다. 모델의 181.1cm에서 신발 높이 7.0cm를 빼서 키를 174.1cm로 잡았습니다. 브라 사이즈는 UK ≈23GG · US ≈23J · EU ≈48L로 추정했습니다. 가슴 차이가 비슷한 그레이스와 리나를 참고해 이 데이터의 표기 방식에 맞춘 값으로, 시판 사이즈를 엄밀하게 환산한 것은 아닙니다',
+}
+REL_BUST_KO = (
+    (0.85, '차트에서도 손꼽히는 볼륨입니다'),
+    (0.66, '전체 평균보다 확실히 큰 편입니다'),
+    (0.34, '전체 평균과 비슷합니다'),
+    (0.15, '차트에서는 아담한 편입니다'),
+    (0.00, '차트에서도 작은 편입니다'),
+)
+WAIST_KO = {'low': '전체에서도 가는 편입니다', 'avg': '이 캐릭터들 사이에서는 평균적입니다', 'high': '대부분의 캐릭터보다 넉넉한 편입니다'}
+HIP_KO = {'low': '아담한', 'avg': '평균적인', 'high': '넓은'}
+HIP_SENT_KO = {'low': '아담한 편입니다', 'avg': '평균적입니다', 'high': '넓은 편입니다'}
+THIGH_KO = {'low': '가는', 'avg': '평균적인', 'high': '굵은'}
+SHAPE_KO = {'Hourglass': '모래시계형', 'Balanced': '균형형', 'Straight': '일자형'}
+BALANCE_KO = {'top': '상체 쪽에 무게가 실린 비율', 'bottom': '하체 쪽에 무게가 실린 비율', 'even': '위아래가 균형 잡힌 비율'}
+TAG_KO = {
+    'Petite': '아담', 'Mid': '보통 키', 'Tall': '장신',
+    'Cinched': '잘록', 'Average': '보통', 'Fuller': '넉넉',
+    'Compact': '좁은 편', 'Average-width': '보통', 'Wide': '넓은 편',
+    'Slim': '가는 편', 'Thick': '굵은 편',
+    'Hourglass': '모래시계형', 'Balanced': '균형형', 'Straight': '일자형',
+    'Top-heavy': '상체 비중', 'Bottom-heavy': '하체 비중', 'n/a': '측정 없음',
+}
+FRAME_KO = {'Petite': '아담한 체구', 'Mid': '보통 키', 'Tall': '큰 키'}
+
+
+def josa(word, with_final, without_final):
+    """Pick the Korean particle that follows the last Hangul syllable of word."""
+    for ch in reversed(word):
+        if '가' <= ch <= '힣':
+            return with_final if (ord(ch) - 0xAC00) % 28 else without_final
+        if ch.isdigit():
+            return with_final if ch in '013678' else without_final
+    return without_final
 
 
 def lname(d, lang):
-    return d.get('name_ja' if lang == 'ja' else 'name_zh') or d['display']
+    return d.get(f'name_{lang}') or d['display']
 
 
 def lnum(v, dec=1):
@@ -270,14 +322,13 @@ def lv(d, unit, lang, in_key, cm_key, dec=1):
     if raw is None:
         return '—'
     s = lnum(raw, max(dec,d.get('precision_cm',1)) if unit=='cm' else dec)
-    if unit == 'cm':
-        return f'{s}cm' if lang == 'ja' else f'{s}厘米'
-    return f'{s}インチ' if lang == 'ja' else f'{s}英寸'
+    return s + {'ja': ('cm', 'インチ'), 'zh': ('厘米', '英寸'), 'ko': ('cm', '인치')}[lang][unit != 'cm']
 
 
 def rel_bust_l(p, table):
     if p is None:
-        return 'うまく位置づけにくい' if table is REL_BUST_JA else '不太好判断'
+        return {id(REL_BUST_JA): 'うまく位置づけにくい', id(REL_BUST_ZH): '不太好判断',
+                id(REL_BUST_KO): '위치를 가늠하기 어렵습니다'}[id(table)]
     for cut, text in table:
         if p >= cut:
             return text
@@ -285,6 +336,14 @@ def rel_bust_l(p, table):
 
 
 def rank_l(p, lang):
+    if lang == 'ko':
+        if p is None:
+            return '순위 없음'
+        if p >= 0.85:
+            return f"전체 상위 {max(1, round((1-p)*100))}%"
+        if p <= 0.15:
+            return f"전체 하위 {max(1, round(p*100))}%"
+        return '전체 중간 수준'
     if p is None:
         return '順位なし' if lang == 'ja' else '没有排名'
     if p >= 0.85:
@@ -300,7 +359,7 @@ def note_l(d, lang):
         return ''
     if d['stature_basis'] == 'head' and note.lower().startswith('height includes ears'):
         return ''
-    return (NOTE_JA if lang == 'ja' else NOTE_ZH).get(note, note)
+    return {'ja': NOTE_JA, 'zh': NOTE_ZH, 'ko': NOTE_KO}[lang].get(note, note)
 
 
 def describe_ja(d, unit, compare=None):
@@ -484,8 +543,96 @@ def read_line_zh(d):
     return line
 
 
+def describe_ko(d, unit, compare=None):
+    n = lname(d, 'ko')
+    nn = n + josa(n, '은', '는')
+    cm = f"{d['cm']:g}"
+    ft = d.get('ftin') or ''
+    r = H_RANK.get(d.get('variant_of') or d['name'], H_TOTAL)
+    if d.get('height_appendage') == 'horns':
+        frame = (f"{n}의 추정 키는 뿔을 빼면 {d['stature_cm']:g}cm, 뿔을 포함하면 {cm}cm입니다. "
+                 f"비교에는 뿔을 뺀 키를 씁니다.")
+    elif d['stature_basis'] == 'head':
+        gap = d['stature_cm'] - ROSTER_AVG
+        where = ('보다 조금 작습니다' if gap < -2 else
+                 ('보다 조금 큽니다' if gap > 2 else '과 거의 같습니다'))
+        frame = (f"{nn} 공식 키가 {cm}cm({ft})지만, 이 수치에는 귀가 포함되어 있습니다. "
+                 f"정수리 기준으로는 약 {lnum(d['stature_cm'])}cm({d['ftin_stature']})로, 전체 평균{where}.")
+    elif d['height_group'] == 'Tall':
+        if r <= 3:
+            frame = f"{nn} {cm}cm({ft})로, 차트에서도 손꼽히게 큰 편입니다."
+        elif r <= 8:
+            frame = f"{nn} {cm}cm({ft})입니다. {H_TOTAL}명 중 {r}번째로 꽤 큰 편입니다."
+        else:
+            frame = f"{nn} {cm}cm({ft})로 전체 평균보다 큰 편이며, 키 순서로는 {H_TOTAL}명 중 {r}번째입니다."
+    elif d['height_group'] == 'Petite':
+        frame = f"{nn} {cm}cm({ft})로 아담해서, 차트에서도 체구가 작은 편에 속합니다."
+    else:
+        frame = f"{nn} {cm}cm({ft})로 전체 평균과 비슷합니다."
+    bust = f"가슴둘레는 {lv(d, unit, 'ko', 'bust_in', 'bust_cm')}(UK {d['uk']})로, {rel_bust_l(d['p_bust_cm'], REL_BUST_KO)}."
+    waist = (f"허리둘레는 {lv(d, unit, 'ko', 'waist_in', 'waist_cm')}"
+             f"(허리-키 비율 {d['whtr']:.2f})로, {WAIST_KO[d['waist_level']]}.")
+    if d['thigh_cm'] is not None:
+        hips = (f"그 아래로 {HIP_KO[d['hip_level']]} 엉덩이({lv(d, unit, 'ko', 'hip_in', 'hip_cm')})에 "
+                f"{THIGH_KO[d['thigh_level']]} 허벅지({lv(d, unit, 'ko', 'thigh_in', 'thigh_cm')})가 이어집니다. "
+                f"허벅지둘레는 {rank_l(d['p_thigh_cm'], 'ko')}입니다.")
+    else:
+        hips = (f"엉덩이둘레는 {lv(d, unit, 'ko', 'hip_in', 'hip_cm')}로 {HIP_SENT_KO[d['hip_level']]}. "
+                f"허벅지는 믿을 만한 측정값이 없습니다.")
+    b, h = d['bust_cm'], d['hip_cm']
+    balance = {
+        'top': '전체 순위로는 가슴이 엉덩이보다 위에 있습니다',
+        'bottom': '전체 순위로는 엉덩이가 가슴보다 위에 있습니다',
+        'even': '가슴과 엉덩이의 전체 순위가 비슷합니다',
+    }[d['balance']]
+    bw = b / d['waist_cm'] if b and d['waist_cm'] else 0
+    hw = h / d['waist_cm'] if h and d['waist_cm'] else 0
+    bhi = min(b, h) / max(b, h)
+    shape = (f"가슴/허리 {bw:.2f}, 엉덩이/허리 {hw:.2f}, 가슴과 엉덩이의 균형은 {bhi*100:.0f}%입니다. "
+             f"전체적으로 {SHAPE_KO[d['shape']]} 실루엣이며, {balance}.")
+    parts = [frame, bust, waist, hips, shape]
+    if compare is None and d.get('variant_of'):
+        compare = by_key.get(d['variant_of'])
+    if compare is not None:
+        if unit == 'cm':
+            dB = (d['bust_cm'] or 0) - (compare['bust_cm'] or 0)
+            dW = (d['waist_cm'] or 0) - (compare['waist_cm'] or 0)
+            dH = (d['hip_cm'] or 0) - (compare['hip_cm'] or 0)
+            u = 'cm'
+        else:
+            dB = (d['bust_in'] or 0) - (compare['bust_in'] or 0)
+            dW = (d['waist_in'] or 0) - (compare['waist_in'] or 0)
+            dH = (d['hip_in'] or 0) - (compare['hip_in'] or 0)
+            u = '인치'
+        if max(abs(dB), abs(dW), abs(dH)) >= (1.2 if unit == 'cm' else 0.5):
+            parts.append(f"기본 모델과 비교하면 이 의상은 가슴둘레 {dB:+.1f}{u}, "
+                         f"허리둘레 {dW:+.1f}{u}, 엉덩이둘레 {dH:+.1f}{u}입니다.")
+    note = note_l(d, 'ko')
+    if note:
+        parts.append(f"차트 메모: {note.rstrip('.。')}.")
+    return ' '.join(parts)
+
+
+def read_line_ko(d):
+    bits = []
+    if d['p_bust_cm'] is not None:
+        if d['p_bust_cm'] >= 0.7: bits.append('풍만한 가슴')
+        elif d['p_bust_cm'] <= 0.3: bits.append('아담한 가슴')
+    if d['p_waist_cm'] is not None:
+        if d['p_waist_cm'] >= 0.7: bits.append('넉넉한 허리')
+        elif d['p_waist_cm'] <= 0.3: bits.append('가는 허리')
+    if d['p_hip_cm'] is not None:
+        if d['p_hip_cm'] >= 0.7: bits.append('넓은 엉덩이')
+        elif d['p_hip_cm'] <= 0.3: bits.append('좁은 엉덩이')
+    if d['thigh_cm'] is not None and d['p_thigh_cm'] is not None:
+        if d['p_thigh_cm'] >= 0.66: bits.append('굵은 허벅지')
+        elif d['p_thigh_cm'] <= 0.33: bits.append('가는 허벅지')
+    line = ', '.join([FRAME_KO[d['height_group']], *bits])
+    return line + f". {SHAPE_KO[d['shape']]} 실루엣, {BALANCE_KO[d['balance']]}."
+
+
 def local_tags(d, lang):
-    table = TAG_JA if lang == 'ja' else TAG_ZH
+    table = {'ja': TAG_JA, 'zh': TAG_ZH, 'ko': TAG_KO}[lang]
     return {k: table.get(v, v) for k, v in build_tags(d).items()}
 
 for d in data:
@@ -495,15 +642,20 @@ for d in data:
     d['desc_ja_in'] = describe_ja(d, 'in')
     d['desc_zh_cm'] = describe_zh(d, 'cm')
     d['desc_zh_in'] = describe_zh(d, 'in')
+    d['desc_ko_cm'] = describe_ko(d, 'cm')
+    d['desc_ko_in'] = describe_ko(d, 'in')
     d.pop('desc', None)
     d['tags'] = build_tags(d)
     d['tags_ja'] = local_tags(d, 'ja')
     d['tags_zh'] = local_tags(d, 'zh')
+    d['tags_ko'] = local_tags(d, 'ko')
     d['read'] = read_line(d)
     d['read_ja'] = read_line_ja(d)
     d['read_zh'] = read_line_zh(d)
+    d['read_ko'] = read_line_ko(d)
     d['notes_ja'] = note_l(d, 'ja')
     d['notes_zh'] = note_l(d, 'zh')
+    d['notes_ko'] = note_l(d, 'ko')
     # an outfit variant keeps its own text and tags; it is always compared
     # against the standard model that owns it
     s = d.get('skin')
@@ -514,15 +666,20 @@ for d in data:
         s['desc_ja_in'] = describe_ja(s, 'in', compare=d)
         s['desc_zh_cm'] = describe_zh(s, 'cm', compare=d)
         s['desc_zh_in'] = describe_zh(s, 'in', compare=d)
+        s['desc_ko_cm'] = describe_ko(s, 'cm', compare=d)
+        s['desc_ko_in'] = describe_ko(s, 'in', compare=d)
         s.pop('desc', None)
         s['tags'] = build_tags(s)
         s['tags_ja'] = local_tags(s, 'ja')
         s['tags_zh'] = local_tags(s, 'zh')
+        s['tags_ko'] = local_tags(s, 'ko')
         s['read'] = read_line(s)
         s['read_ja'] = read_line_ja(s)
         s['read_zh'] = read_line_zh(s)
+        s['read_ko'] = read_line_ko(s)
         s['notes_ja'] = note_l(s, 'ja')
         s['notes_zh'] = note_l(s, 'zh')
+        s['notes_ko'] = note_l(s, 'ko')
 
 json.dump(data, open(ROOT/'tools/data.json','w'), indent=1, ensure_ascii=False)
 print('descriptions written (cm + in)\n')

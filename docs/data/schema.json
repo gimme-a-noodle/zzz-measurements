@@ -268,6 +268,12 @@
        "null"
       ]
      },
+     "display_ko": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
      "profile": {
       "type": "string",
       "format": "uri"
@@ -277,6 +283,10 @@
       "format": "uri"
      },
      "profile_zh": {
+      "type": "string",
+      "format": "uri"
+     },
+     "profile_ko": {
       "type": "string",
       "format": "uri"
      },

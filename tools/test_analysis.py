@@ -428,13 +428,13 @@ process.stdout.write(JSON.stringify(context.html(roster)));
 
     def test_locale_key_parity(self):
         strings = json.loads((ROOT / 'tools/explorer_i18n.json').read_text())
-        self.assertEqual(set(strings), {'en', 'ja', 'zh'})
-        for language in ('ja', 'zh'):
+        self.assertEqual(set(strings), {'en', 'ja', 'zh', 'ko'})
+        for language in ('ja', 'zh', 'ko'):
             self.assertEqual(strings['en'].keys(), strings[language].keys())
             self.assertTrue(all(strings[language].values()))
         source = (ROOT / 'tools/template.html').read_text()
-        blocks = re.split(r'\n  (?:en|ja|zh): \{', re.search(r'const I18N = \{(.*?)\n\};', source, re.S)[1])[1:]
-        for lang, block in zip(('en', 'ja', 'zh'), blocks):
+        blocks = re.split(r'\n  (?:en|ja|zh|ko): \{', re.search(r'const I18N = \{(.*?)\n\};', source, re.S)[1])[1:]
+        for lang, block in zip(('en', 'ja', 'zh', 'ko'), blocks):
             existing = set(re.findall(r'\b(\w+):\s*[\'\"]', block))
             self.assertFalse(existing & strings[lang].keys())
         module = ast.parse((ROOT / 'tools/build_pages.py').read_text())

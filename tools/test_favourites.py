@@ -116,7 +116,7 @@ assert.deepEqual(B.parse(JSON.parse(new URLSearchParams(url.hash.slice(1)).get('
 
     def test_page_and_locale_coverage(self):
         copy = json.loads((ROOT / 'tools/favourites_i18n.json').read_text())
-        self.assertEqual(set(copy), {'en', 'ja', 'zh'})
+        self.assertEqual(set(copy), {'en', 'ja', 'zh', 'ko'})
         for lang in copy:
             self.assertEqual(set(copy[lang]), set(copy['en']))
             self.assertTrue(all(copy[lang].values()))
