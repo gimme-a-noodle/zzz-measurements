@@ -331,8 +331,9 @@ Two notes:
   (에스코어 드림 9 Black), the face the Korean game client uses in the same role.
   Its licence allows free redistribution but forbids modifying the file, so
   `fonts/SCDream9.otf` is the unmodified official OTF (743 kB), limited to Hangul
-  by `unicode-range` and left out of the service-worker install cache, so only
-  Korean pages download it. `fonts.css` reproduces the client build's vertical
+  by `unicode-range`. Every locale lists it after Hongmeng, so Hangul such as the
+  한국어 language link renders in it everywhere; it is left out of the
+  service-worker install cache and loads on first use. `fonts.css` reproduces the client build's vertical
   metrics with `ascent-override`/`descent-override`. `tools/fetch_ko_font.py`
   refetches it and checks the pinned SHA-256; see `fonts/LICENSE-S-Core-Dream.txt`.
 

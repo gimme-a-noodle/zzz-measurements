@@ -186,7 +186,8 @@
    in the role Hongmeng plays for Japanese and Chinese. The official OTF ships
    unmodified, as its licence requires; see LICENSE-S-Core-Dream.txt. The
    overrides reproduce the client build's vertical metrics without editing the
-   file. Hangul only, so other locales never download it. */
+   file. Every locale lists it after Hongmeng so Hangul, such as the 한국어
+   language link, always renders in this face. */
 @font-face {
   font-family: 'S-Core Dream 9';
   font-style: normal;
