@@ -184,12 +184,12 @@ def similar(d):
 
 
 CSS = (ROOT/'tools/visual_tools.css').read_text()+'''
-:root{--dim2:var(--dimmer);--disp:'ZZZ Hongmeng','Anton','Noto Sans JP 900','Dela Gothic One','Arial Narrow',Impact,sans-serif;
-  --body:'ZZZ Hongmeng',Inter,'Noto Sans JP 900','Noto Sans JP',system-ui,-apple-system,sans-serif;
-  --num:'Chakra Petch','ZZZ Hongmeng','Noto Sans JP 900','Noto Sans JP',ui-monospace,Menlo,monospace}
-html[lang^="zh"]{--disp:'ZZZ Hongmeng','Anton','Noto Sans SC Display','Arial Narrow',Impact,sans-serif;
-  --body:'ZZZ Hongmeng',Inter,'Noto Sans SC Display','Noto Sans SC',system-ui,-apple-system,sans-serif;
-  --num:'Chakra Petch','ZZZ Hongmeng','Noto Sans SC Display','Noto Sans SC',ui-monospace,Menlo,monospace}
+:root{--dim2:var(--dimmer);--disp:'ZZZ Hongmeng','S-Core Dream 9','Anton','Noto Sans JP 900','Dela Gothic One','Arial Narrow',Impact,sans-serif;
+  --body:'ZZZ Hongmeng','S-Core Dream 9',Inter,'Noto Sans JP 900','Noto Sans JP',system-ui,-apple-system,sans-serif;
+  --num:'Chakra Petch','ZZZ Hongmeng','S-Core Dream 9','Noto Sans JP 900','Noto Sans JP',ui-monospace,Menlo,monospace}
+html[lang^="zh"]{--disp:'ZZZ Hongmeng','S-Core Dream 9','Anton','Noto Sans SC Display','Arial Narrow',Impact,sans-serif;
+  --body:'ZZZ Hongmeng','S-Core Dream 9',Inter,'Noto Sans SC Display','Noto Sans SC',system-ui,-apple-system,sans-serif;
+  --num:'Chakra Petch','ZZZ Hongmeng','S-Core Dream 9','Noto Sans SC Display','Noto Sans SC',ui-monospace,Menlo,monospace}
 html[lang^="ko"]{--disp:'ZZZ Hongmeng','S-Core Dream 9','Anton','Arial Narrow',Impact,sans-serif;
   --body:'ZZZ Hongmeng','S-Core Dream 9',Inter,'Apple SD Gothic Neo','Malgun Gothic',system-ui,-apple-system,sans-serif;
   --num:'Chakra Petch','ZZZ Hongmeng','S-Core Dream 9',ui-monospace,Menlo,monospace}
